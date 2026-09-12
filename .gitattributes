@@ -1,0 +1,4 @@
+# Preserve frozen tabular/sequence artifacts byte-for-byte for checksum audits.
+computational_package/data/** -text whitespace=-trailing-space,-blank-at-eof
+computational_package/results/** -text whitespace=-trailing-space,-blank-at-eof
+computational_package/MANIFEST.sha256 text eol=lf

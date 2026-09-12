@@ -2,6 +2,25 @@
 .manifest_build/
 __pycache__/
 node_modules/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+token.json
+secrets.*
+
+# Nonportable research artifacts
+**/runtime/
+**/raw_calculations/
+**/aligned_models/
+**/model_calculation_records/
+**/sampled_surface_vectors/
+**/io.mc
+**/__pycache__/
 
 # Local inspection and test artifacts
 outputs/**/.DS_Store
