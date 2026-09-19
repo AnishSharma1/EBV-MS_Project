@@ -1,0 +1,42 @@
+source_line_start,object_type,source_title_or_file,v9_destination,status,notes
+28,section,Background,main.tex,retained,unchanged
+36,subsection,Study design,main.tex,retained,unchanged
+39,subsection,Peptide curation and allele-specific pairing,main.tex,retained,unchanged
+44,subsection,TCR-facing sequence-similarity scoring,main.tex,retained,unchanged
+47,subsection,Evidence audit and candidate prioritization,main.tex,retained,unchanged
+51,subsection,Binding predictions and binding-register analysis,main.tex,retained,unchanged
+56,subsection,Expanded 49-pair cohort selection,supplement.tex SM2,moved-detail,summary retained in main
+59,subsection,Secondary provisional-tier rules,supplement.tex SM2,moved-detail,claim boundary retained in main
+62,subsection,pMHC structural modeling,main.tex,retained,unchanged
+65,subsection,Calibration and exploratory modeling,supplement.tex SM8,moved-detail,benchmark and exclusion summary retained in main
+72,subsection,Statistical calibration and sensitivity analyses,supplement.tex SM3,moved-detail,design summaries retained in main
+79,subsection,Reproducibility,main.tex,retained,unchanged
+82,figure,figure1.pdf,main.tex,retained,workflow figure
+85,subsection,Initial sequence comparisons across four HLA alleles,main.tex,retained,headline results retained
+88,figure,figure2.pdf,supplement.tex Figure S1,moved,source asset copied verbatim
+90,table,Top sequence-ranked pairs within each allele,supplement.tex Table S1,moved,table content preserved
+107,subsection,Constrained-null simulation results,main.tex,retained,headline results retained
+110,subsection,Initial Eight-Candidate Evidence Review,main.tex,retained,headline results retained
+113,table,Initial eight-candidate evidence audit,supplement.tex Table S2,moved,table content preserved
+141,subsection,Focused Structural Assessment of Predicted Binding Registers,main.tex,retained,unchanged
+146,figure,figure5.pdf,main.tex,retained,input-length sensitivity
+147,figure,figure6.pdf,supplement.tex Figure S2,moved,source asset copied verbatim
+150,subsection,Cross-Method Structural Reproducibility,main.tex,retained,unchanged
+155,subsection,Expanded Assessment of 49 Candidate Pairs,main.tex,retained,unchanged
+160,subsection,Secondary Provisional Classifications,main.tex,retained,headline counts retained
+163,table,Secondary provisional classifications in the 49-pair cohort,supplement.tex Table S3,moved,table content preserved
+178,section,Discussion,main.tex,retained,unchanged
+179,subsection,Principal Findings,main.tex,retained,unchanged
+184,subsection,Relevance of BALF5--TALDO1,main.tex,retained,unchanged
+187,subsection,Contribution of Structural Analyses,main.tex,retained,unchanged
+190,subsection,Linkage to Prior Research,main.tex,retained,unchanged
+193,subsection,Additional Exploratory Methods,main.tex,retained,unchanged
+196,subsection,Limitations,main.tex,retained,unchanged
+199,subsection,Experimental Next Steps,main.tex,retained,unchanged
+202,section,Conclusions,main.tex,retained,unchanged
+204,section,Abbreviations,main.tex,retained,unchanged
+207,section,Declarations,main.tex,retained,unchanged
+229,appendix,Inline supplementary material,supplement.tex,separated,removed from main document
+230,section,Supplementary material,supplement.tex,separated,inline heading removed from main
+233,table,Constrained-null simulation outputs,supplement.tex Table S4,moved,table content preserved
+NA,figure,figure3.pdf,unassigned,unused,preserved in V9 figures directory but not referenced

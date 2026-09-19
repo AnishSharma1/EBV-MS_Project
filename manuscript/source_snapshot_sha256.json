@@ -1,0 +1,15 @@
+{
+  "snapshot_date": "2026-09-17",
+  "source_directory": "output/latex_manuscript_v7",
+  "files": {
+    "main.tex": "6f7de2e8e84863578b38d4494aa4c48b995e9dc0cb622d121f8ce0c0cc5e31b4",
+    "references.tex": "b37adc00aa420871060c7d68f90d1f59d1d294dbd84f907b9d9dc7ec0ad43481",
+    "figures/figure1.pdf": "c2cab2762a7e999d4712dcca072a5bc784ca59b84695a59225af0366c9fca10d",
+    "figures/figure2.pdf": "3aec2b4acc5dd0d98e703a5909367a4bde455f2d0b01cf90ef70634479d55d0f",
+    "figures/figure3.pdf": "b9bf7784575986c51fd6b50debaa34292de4b558af6cb0e8b14ab04194e64b86",
+    "figures/figure4.pdf": "11b0394f2a6d0a85eb009a542041a9b4ccf1a9f9e63b081ce6981a86f238affb",
+    "figures/figure5.pdf": "d9449a857b816f251ff7f65112e9ba8ead07657641e464c3348ca9655c7c4b5c",
+    "figures/figure6.pdf": "f0cd0d1215903abce920ea80e710361e25f9a1c2798422fcdc77cb6430056cbe",
+    "paper_v8_2_ready_2026-09-15.pdf": "fd8a73ec7ed0f05c637ed2ad3084457795643e0457462f4fa44e5c71500f37da"
+  }
+}

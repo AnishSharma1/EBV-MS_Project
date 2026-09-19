@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, pipeline, or dataset, please cite it as below."
+authors:
+  - family-names: "Sharma"
+    given-names: "Anish"
+    affiliation: "Liberal Arts and Science Academy, Austin, TX, USA"
+title: "Computational assessment of EBV-self peptide similarities across HLA class II contexts"
+version: 1.0.0
+date-released: 2026-09-19
+url: "https://github.com/AnishSharma1/EBV-MS_Project"
+repository-code: "https://github.com/AnishSharma1/EBV-MS_Project"
+keywords:
+  - "immunoinformatics"
+  - "computational immunology"
+  - "Epstein-Barr virus"
+  - "multiple sclerosis"
+  - "molecular mimicry"
+  - "HLA class II"
+  - "AlphaFold 3"

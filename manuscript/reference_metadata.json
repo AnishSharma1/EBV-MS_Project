@@ -1,0 +1,3595 @@
+{
+  "bjornevik": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          10
+        ]
+      ],
+      "date-time": "2026-09-10T21:59:50Z",
+      "timestamp": 1789077590016,
+      "version": "build-2803163510"
+    },
+    "reference-count": 52,
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "issue": "6578",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Science"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          1,
+          21
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Multiple sclerosis (MS) is a chronic inflammatory demyelinating disease of the central nervous system of unknown etiology. We tested the hypothesis that MS is caused by Epstein-Barr virus (EBV) in a cohort comprising more than 10 million young adults on active duty in the US military, 955 of whom were diagnosed with MS during their period of service. Risk of MS increased 32-fold after infection with EBV but was not increased after infection with other viruses, including the similarly transmitted cytomegalovirus. Serum levels of neurofilament light chain, a biomarker of neuroaxonal degeneration, increased only after EBV seroconversion. These findings cannot be explained by any known risk factor for MS and suggest EBV as the leading cause of MS.</jats:p>",
+    "DOI": "10.1126/science.abj8222",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          1,
+          14
+        ]
+      ],
+      "date-time": "2022-01-14T15:37:45Z",
+      "timestamp": 1642174665000
+    },
+    "page": "296-301",
+    "source": "Crossref",
+    "is-referenced-by-count": 1937,
+    "title": [
+      "Longitudinal analysis reveals high prevalence of Epstein-Barr virus associated with multiple sclerosis"
+    ],
+    "prefix": "10.1126",
+    "volume": "375",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-2892-6986",
+        "authenticated-orcid": true,
+        "given": "Kjetil",
+        "family": "Bjornevik",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Nutrition, Harvard T. H. Chan School of Public Health, Boston, MA, USA."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-3665-2006",
+        "authenticated-orcid": true,
+        "given": "Marianna",
+        "family": "Cortese",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Nutrition, Harvard T. H. Chan School of Public Health, Boston, MA, USA."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5272-2425",
+        "authenticated-orcid": true,
+        "given": "Brian C.",
+        "family": "Healy",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Partners Multiple Sclerosis Center, Brigham and Women\u2019s Hospital, Boston, MA, USA."
+          },
+          {
+            "name": "Department of Neurology, Harvard Medical School, Boston, MA, USA."
+          },
+          {
+            "name": "Biostatistics Center, Massachusetts General Hospital, Boston, MA, USA."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jens",
+        "family": "Kuhle",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Neurologic Clinic and Policlinic, MS Center and Research Center for Clinical Neuroimmunology and Neuroscience Basel (RC2NB), University Hospital Basel, University of Basel, Basel, Switzerland."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-0674-5762",
+        "authenticated-orcid": true,
+        "given": "Michael J.",
+        "family": "Mina",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Division of Genetics, Brigham and Women\u2019s Hospital, Howard Hughes Medical Institute, Department of Genetics, and Program in Virology, Harvard Medical School, Boston, MA, USA."
+          },
+          {
+            "name": "Center for Communicable Disease Dynamics, Department of Epidemiology, and Department of Immunology and Infectious Diseases, Harvard T. H. Chan School of Public Health, Boston, MA, USA."
+          },
+          {
+            "name": "Department of Pathology, Brigham and Women\u2019s Hospital, Harvard Medical School, Boston, MA, USA."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2512-9284",
+        "authenticated-orcid": true,
+        "given": "Yumei",
+        "family": "Leng",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Division of Genetics, Brigham and Women\u2019s Hospital, Howard Hughes Medical Institute, Department of Genetics, and Program in Virology, Harvard Medical School, Boston, MA, USA."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7923-6283",
+        "authenticated-orcid": true,
+        "given": "Stephen J.",
+        "family": "Elledge",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Division of Genetics, Brigham and Women\u2019s Hospital, Howard Hughes Medical Institute, Department of Genetics, and Program in Virology, Harvard Medical School, Boston, MA, USA."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "David W.",
+        "family": "Niebuhr",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Preventive Medicine and Biostatistics, Uniformed Services University of the Health Sciences, Bethesda, MD, USA."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ann I.",
+        "family": "Scher",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Preventive Medicine and Biostatistics, Uniformed Services University of the Health Sciences, Bethesda, MD, USA."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7486-9858",
+        "authenticated-orcid": true,
+        "given": "Kassandra L.",
+        "family": "Munger",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Nutrition, Harvard T. H. Chan School of Public Health, Boston, MA, USA."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-0585-3294",
+        "authenticated-orcid": true,
+        "given": "Alberto",
+        "family": "Ascherio",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Nutrition, Harvard T. H. Chan School of Public Health, Boston, MA, USA."
+          },
+          {
+            "name": "Department of Epidemiology, Harvard T. H. Chan School of Public Health, Boston, MA, USA."
+          },
+          {
+            "name": "Channing Laboratory, Department of Medicine, Brigham and Women\u2019s Hospital, and Harvard Medical School, Boston, MA, USA."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "221",
+    "reference": [
+      {
+        "key": "e_1_3_3_2_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1056/NEJMra1401483"
+      },
+      {
+        "key": "e_1_3_3_3_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/brain/awaa117"
+      },
+      {
+        "key": "e_1_3_3_4_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/35095584"
+      },
+      {
+        "key": "e_1_3_3_5_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/ana.20820"
+      },
+      {
+        "key": "e_1_3_3_6_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/jama.293.20.2496"
+      },
+      {
+        "key": "e_1_3_3_7_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1084/jem.20071030"
+      },
+      {
+        "key": "e_1_3_3_8_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1212/NXI.0000000000000466"
+      },
+      {
+        "key": "e_1_3_3_9_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0192109"
+      },
+      {
+        "key": "e_1_3_3_10_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/brain/awr197"
+      },
+      {
+        "key": "e_1_3_3_11_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.7205/MILMED-D-14-00739"
+      },
+      {
+        "key": "e_1_3_3_12_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/ana.21978"
+      },
+      {
+        "key": "e_1_3_3_13_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1086/505400"
+      },
+      {
+        "key": "e_1_3_3_14_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0950268808000551"
+      },
+      {
+        "key": "e_1_3_3_15_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/infdis/jit321"
+      },
+      {
+        "key": "e_1_3_3_16_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/EDE.0b013e3181d61eeb"
+      },
+      {
+        "key": "e_1_3_3_17_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/ene.14961"
+      },
+      {
+        "key": "e_1_3_3_18_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/1352458520914844"
+      },
+      {
+        "key": "e_1_3_3_19_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41582-018-0058-z"
+      },
+      {
+        "key": "e_1_3_3_20_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1212/WNL.0000000000009097"
+      },
+      {
+        "key": "e_1_3_3_21_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/jamaneurol.2019.3238"
+      },
+      {
+        "key": "e_1_3_3_22_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.aaa0698"
+      },
+      {
+        "key": "e_1_3_3_23_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.aay6485"
+      },
+      {
+        "key": "e_1_3_3_24_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.7326/M16-2607"
+      },
+      {
+        "key": "e_1_3_3_25_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nature10251"
+      },
+      {
+        "key": "e_1_3_3_26_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1046/j.1365-2249.1999.00912.x"
+      },
+      {
+        "key": "e_1_3_3_27_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nrneurol.2016.187"
+      },
+      {
+        "key": "e_1_3_3_28_2",
+        "article-title": "Attenuated immune control of Epstein-Barr virus in humanized mice is associated with the multiple sclerosis risk factor HLA-DR15",
+        "author": "Zdimerova H.",
+        "year": "2020",
+        "unstructured": "H. Zdimerova, A. Murer, C. Engelmann, A. Raykova, Y. Deng, C. Gujer, J. R\u00fchl, D. McHugh, N. Caduff, R. Naghavian, G. Pezzino, R. Capaul, A. Zbinden, G. Ferlazzo, J. D. L\u00fcnemann, R. Martin, B. Chatterjee, C. M\u00fcnz, Attenuated immune control of Epstein-Barr virus in humanized mice is associated with the multiple sclerosis risk factor HLA-DR15. Eur. J. Immunol. (2020). 32949466",
+        "journal-title": "Eur. J. Immunol."
+      },
+      {
+        "key": "e_1_3_3_29_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1055/s-0036-1579693"
+      },
+      {
+        "key": "e_1_3_3_30_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/ene.13925"
+      },
+      {
+        "key": "e_1_3_3_31_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0140-6736(85)92801-6"
+      },
+      {
+        "key": "e_1_3_3_32_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/brain/awab100"
+      },
+      {
+        "key": "e_1_3_3_33_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/archneur.64.1.72"
+      },
+      {
+        "key": "e_1_3_3_34_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/archneur.63.6.noc50328"
+      },
+      {
+        "key": "e_1_3_3_35_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0140-6736(14)62457-0"
+      },
+      {
+        "key": "e_1_3_3_36_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-981-10-7230-7_22"
+      },
+      {
+        "key": "e_1_3_3_37_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1056/NEJMoa1601277"
+      },
+      {
+        "key": "e_1_3_3_38_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1172/jci.insight.124714"
+      },
+      {
+        "key": "e_1_3_3_39_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Data for: K. Bjornevik M. Cortese B. C. Healy J. Kuhle M. J. Mina Y. Leng S. J. Elledge D. W. Niebuhr A. I. Scher K. L. Munger A. Ascherio Data for: K. Bjornevik M. Cortese B. C. Healy J. Kuhle M. J. Mina Y. Leng S. J. Elledge D. W. Niebuhr A. I. Scher K. L. Munger A. Ascherio Longitudinal analysis reveals high prevalence of Epstein-Barr virus associated with multiple sclerosis Harvard Dataverse (2021); https://doi.org/10.7910/DVN/KYH9SF.10.7910/DVN/KYH9SF",
+        "DOI": "10.1126/science.abj8222"
+      },
+      {
+        "key": "e_1_3_3_40_2",
+        "unstructured": "U.S. Department of Defense \u201c2019 Demographics. profile of the miltary community\u201d (DoD 2019); https://download.militaryonesource.mil/12038/MOS/Reports/2019-demographics-report.pdf."
+      },
+      {
+        "key": "e_1_3_3_41_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/aje/kwn217"
+      },
+      {
+        "key": "e_1_3_3_42_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1146/annurev.immunol.25.022106.141553"
+      },
+      {
+        "key": "e_1_3_3_43_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jcv.2018.03.001"
+      },
+      {
+        "key": "e_1_3_3_44_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5501/wjv.v1.i1.31"
+      },
+      {
+        "key": "e_1_3_3_45_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0064921"
+      },
+      {
+        "key": "e_1_3_3_46_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/cti.2016.48"
+      },
+      {
+        "key": "e_1_3_3_47_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.84.2.570"
+      },
+      {
+        "key": "e_1_3_3_48_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/ana.24954"
+      },
+      {
+        "key": "e_1_3_3_49_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1515/cclm-2015-1195"
+      },
+      {
+        "key": "e_1_3_3_50_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/1352458513482374"
+      },
+      {
+        "key": "e_1_3_3_51_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0075091"
+      },
+      {
+        "key": "e_1_3_3_52_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nbt.1856"
+      },
+      {
+        "key": "e_1_3_3_53_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/nar/gky1006"
+      }
+    ],
+    "container-title": [
+      "Science"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.science.org/doi/pdf/10.1126/science.abj8222",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          1,
+          15
+        ]
+      ],
+      "date-time": "2024-01-15T18:38:25Z",
+      "timestamp": 1705343905000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.science.org/doi/10.1126/science.abj8222"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          1,
+          21
+        ]
+      ]
+    },
+    "references-count": 52,
+    "journal-issue": {
+      "issue": "6578",
+      "published-print": {
+        "date-parts": [
+          [
+            2022,
+            1,
+            21
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1126/science.abj8222"
+    ],
+    "URL": "https://doi.org/10.1126/science.abj8222",
+    "relation": {
+      "has-review": [
+        {
+          "id-type": "doi",
+          "id": "10.3410/f.741451349.793591234",
+          "asserted-by": "object"
+        },
+        {
+          "id-type": "doi",
+          "id": "10.3410/f.741451349.793591145",
+          "asserted-by": "object"
+        },
+        {
+          "id-type": "doi",
+          "id": "10.3410/f.741451349.793591170",
+          "asserted-by": "object"
+        },
+        {
+          "id-type": "doi",
+          "id": "10.3410/f.741451349.793591941",
+          "asserted-by": "object"
+        },
+        {
+          "id-type": "doi",
+          "id": "10.3410/f.741451349.793591148",
+          "asserted-by": "object"
+        },
+        {
+          "id-type": "doi",
+          "id": "10.3410/f.741451349.793591136",
+          "asserted-by": "object"
+        },
+        {
+          "id-type": "doi",
+          "id": "10.3410/f.741451349.793594508",
+          "asserted-by": "object"
+        }
+      ]
+    },
+    "ISSN": [
+      "0036-8075",
+      "1095-9203"
+    ],
+    "issn-type": [
+      {
+        "value": "0036-8075",
+        "type": "print"
+      },
+      {
+        "value": "1095-9203",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          1,
+          21
+        ]
+      ]
+    }
+  },
+  "lanz": {
+    "error": "HTTP Error 429: Too Many Requests",
+    "DOI": "10.1038/s41586-022-04432-7"
+  },
+  "lang": {
+    "error": "HTTP Error 429: Too Many Requests",
+    "DOI": "10.1038/ni835"
+  },
+  "iedb": {
+    "error": "HTTP Error 429: Too Many Requests",
+    "DOI": "10.1093/nar/gkae1092"
+  },
+  "uniprot": {
+    "error": "HTTP Error 429: Too Many Requests",
+    "DOI": "10.1093/nar/gkae1010"
+  },
+  "netmhc": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          10
+        ]
+      ],
+      "date-time": "2026-09-10T17:32:33Z",
+      "timestamp": 1789061553518,
+      "version": "build-2803163510"
+    },
+    "reference-count": 57,
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "issue": "47",
+    "content-domain": {
+      "domain": [
+        "www.science.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Sci. Adv."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          11,
+          24
+        ]
+      ]
+    },
+    "abstract": "<jats:p>\n            Accurate prediction of antigen presentation by human leukocyte antigen (HLA) class II molecules is crucial for rational development of immunotherapies and vaccines targeting CD4\n            <jats:sup>+</jats:sup>\n            T cell activation. So far, most prediction methods for HLA class II antigen presentation have focused on HLA-DR because of limited availability of immunopeptidomics data for HLA-DQ and HLA-DP while not taking into account alternative peptide binding modes. We present an update to the NetMHCIIpan prediction method, which closes the performance gap between all three HLA class II loci. We accomplish this by first integrating large immunopeptidomics datasets describing the HLA class II specificity space across all loci using a refined machine learning framework that accommodates inverted peptide binders. Next, we apply targeted immunopeptidomics assays to generate data that covers additional HLA-DP specificities. The final method, NetMHCIIpan-4.3, achieves high accuracy and molecular coverage across all HLA class II allotypes\n            <jats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"https://services.healthtech.dtu.dk/service.php?NetMHCIIpan-4.3\"/>\n            .\n          </jats:p>",
+    "DOI": "10.1126/sciadv.adj6367",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2023,
+          11,
+          24
+        ]
+      ],
+      "date-time": "2023-11-24T18:58:15Z",
+      "timestamp": 1700852295000
+    },
+    "update-policy": "https://doi.org/10.34133/aaas_crossmark",
+    "source": "Crossref",
+    "is-referenced-by-count": 185,
+    "title": [
+      "Accurate prediction of HLA class II antigen presentation across all loci using tailored data acquisition and refined machine learning"
+    ],
+    "prefix": "10.1126",
+    "volume": "9",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-1322-2644",
+        "authenticated-orcid": true,
+        "given": "Jonas B.",
+        "family": "Nilsson",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Health Technology, Technical University of Denmark, DK-2800 Lyngby, Denmark."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8434-8703",
+        "authenticated-orcid": true,
+        "given": "Saghar",
+        "family": "Kaabinejadian",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Pure MHC LLC, Oklahoma City, OK, USA."
+          },
+          {
+            "name": "Department of Microbiology and Immunology, University of Oklahoma Health Sciences Center, Oklahoma City, OK, USA."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8285-7985",
+        "authenticated-orcid": true,
+        "given": "Hooman",
+        "family": "Yari",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Microbiology and Immunology, University of Oklahoma Health Sciences Center, Oklahoma City, OK, USA."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8960-7348",
+        "authenticated-orcid": true,
+        "given": "Michel G.\u00a0D.",
+        "family": "Kester",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Hematology, Leiden University Medical Center, Leiden, Netherlands."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-9670-4664",
+        "authenticated-orcid": true,
+        "given": "Peter",
+        "family": "van Balen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Hematology, Leiden University Medical Center, Leiden, Netherlands."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7066-4174",
+        "authenticated-orcid": true,
+        "given": "William H.",
+        "family": "Hildebrand",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Microbiology and Immunology, University of Oklahoma Health Sciences Center, Oklahoma City, OK, USA."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7885-4311",
+        "authenticated-orcid": true,
+        "given": "Morten",
+        "family": "Nielsen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Health Technology, Technical University of Denmark, DK-2800 Lyngby, Denmark."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "221",
+    "reference": [
+      {
+        "key": "e_1_3_2_2_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fimmu.2013.00321"
+      },
+      {
+        "key": "e_1_3_2_3_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s12026-016-8817-7"
+      },
+      {
+        "key": "e_1_3_2_4_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1074/jbc.M110.148155"
+      },
+      {
+        "key": "e_1_3_2_5_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/acs.jproteome.9b00874"
+      },
+      {
+        "key": "e_1_3_2_6_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1074/jbc.M111.320374"
+      },
+      {
+        "key": "e_1_3_2_7_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0950-351X(05)80137-5"
+      },
+      {
+        "key": "e_1_3_2_8_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4049/jimmunol.150.6.2263"
+      },
+      {
+        "key": "e_1_3_2_9_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ccell.2022.12.007"
+      },
+      {
+        "key": "e_1_3_2_10_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "e0182786",
+        "DOI": "10.1371/journal.pone.0182786",
+        "article-title": "Expression of the MHC class II in triple-negative breast cancer is associated with tumor-infiltrating lymphocytes and interferon signaling",
+        "volume": "12",
+        "author": "Park I. A.",
+        "year": "2017",
+        "unstructured": "I. A.\u00a0Park, S. H.\u00a0Hwang, I. H.\u00a0Song, S. H.\u00a0Heo, Y. A.\u00a0Kim, W. S.\u00a0Bang, H. S.\u00a0Park, M.\u00a0Lee, G.\u00a0Gong, H. J.\u00a0Lee, Expression of the MHC class II in triple-negative breast cancer is associated with tumor-infiltrating lymphocytes and interferon signaling. PLOS ONE 12, e0182786 (2017).",
+        "journal-title": "PLOS ONE"
+      },
+      {
+        "key": "e_1_3_2_11_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/ncomms10582"
+      },
+      {
+        "key": "e_1_3_2_12_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pntd.0000304"
+      },
+      {
+        "key": "e_1_3_2_13_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/ng.3143"
+      },
+      {
+        "key": "e_1_3_2_14_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.humimm.2013.08.008"
+      },
+      {
+        "key": "e_1_3_2_15_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4049/jimmunol.180.5.3268"
+      },
+      {
+        "key": "e_1_3_2_16_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5665/sleep.3300"
+      },
+      {
+        "key": "e_1_3_2_17_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/ng.3353"
+      },
+      {
+        "key": "e_1_3_2_18_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1182/blood-2013-02-481945"
+      },
+      {
+        "key": "e_1_3_2_19_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/TP.0000000000001713"
+      },
+      {
+        "key": "e_1_3_2_20_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1182/blood.2020008464"
+      },
+      {
+        "key": "e_1_3_2_21_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41596-019-0133-y"
+      },
+      {
+        "key": "e_1_3_2_22_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-1-4939-9450-2_10"
+      },
+      {
+        "key": "e_1_3_2_23_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-1-4939-8979-9_5"
+      },
+      {
+        "key": "e_1_3_2_24_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41587-019-0289-6"
+      },
+      {
+        "key": "e_1_3_2_25_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fimmu.2022.835454"
+      },
+      {
+        "key": "e_1_3_2_26_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s42003-023-04749-7"
+      },
+      {
+        "key": "e_1_3_2_27_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/14789450.2022.2064278"
+      },
+      {
+        "key": "e_1_3_2_28_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1146/annurev-biodatasci-021920-100259"
+      },
+      {
+        "key": "e_1_3_2_29_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.immuni.2023.03.009"
+      },
+      {
+        "key": "e_1_3_2_30_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.immuni.2019.08.012"
+      },
+      {
+        "key": "e_1_3_2_31_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1074/mcp.TIR119.001658"
+      },
+      {
+        "key": "e_1_3_2_32_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.immuno.2021.100005"
+      },
+      {
+        "key": "e_1_3_2_33_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4049/jimmunol.2000192"
+      },
+      {
+        "key": "e_1_3_2_34_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.2214331119"
+      },
+      {
+        "key": "e_1_3_2_35_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fimmu.2022.831822"
+      },
+      {
+        "key": "e_1_3_2_36_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4049/jimmunol.2001409"
+      },
+      {
+        "key": "e_1_3_2_37_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1182/blood.2022015860"
+      },
+      {
+        "key": "e_1_3_2_38_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-1-4939-8546-3_4"
+      },
+      {
+        "key": "e_1_3_2_39_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00251-013-0714-9"
+      },
+      {
+        "key": "e_1_3_2_40_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00251-013-0720-y"
+      },
+      {
+        "key": "e_1_3_2_41_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s13073-018-0594-6"
+      },
+      {
+        "key": "e_1_3_2_42_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/nar/29.1.210"
+      },
+      {
+        "key": "e_1_3_2_43_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/eji.200939225"
+      },
+      {
+        "key": "e_1_3_2_44_2",
+        "first-page": "D948",
+        "article-title": "IPD-IMGT/HLA Database",
+        "volume": "48",
+        "author": "Robinson J.",
+        "year": "2020",
+        "unstructured": "J.\u00a0Robinson, D. J.\u00a0Barker, X.\u00a0Georgiou, M. A.\u00a0Cooper, P.\u00a0Flicek, S.\u00a0G.\u00a0E.\u00a0Marsh, IPD-IMGT/HLA Database. Nucleic Acids Res. 48, D948\u2013D955 (2020).",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "e_1_3_2_45_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/pro.5560010313"
+      },
+      {
+        "key": "e_1_3_2_46_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00251-019-01137-6"
+      },
+      {
+        "key": "e_1_3_2_47_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fimmu.2018.02236"
+      },
+      {
+        "key": "e_1_3_2_48_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1056/NEJMoa1500140"
+      },
+      {
+        "key": "e_1_3_2_49_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.humimm.2017.11.001"
+      },
+      {
+        "key": "e_1_3_2_50_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/intimm/dxg057"
+      },
+      {
+        "key": "e_1_3_2_51_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00251-012-0615-3"
+      },
+      {
+        "key": "e_1_3_2_52_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.humimm.2021.04.007"
+      },
+      {
+        "key": "e_1_3_2_53_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/1471-2105-8-238"
+      },
+      {
+        "key": "e_1_3_2_54_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00251-008-0341-z"
+      },
+      {
+        "key": "e_1_3_2_55_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.7717/peerj.8584"
+      },
+      {
+        "key": "e_1_3_2_56_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/nar/gkaa1100"
+      },
+      {
+        "key": "e_1_3_2_57_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/nar/gks469"
+      },
+      {
+        "key": "e_1_3_2_58_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/nar/gky1106"
+      }
+    ],
+    "container-title": [
+      "Science Advances"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.science.org/doi/pdf/10.1126/sciadv.adj6367",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          1,
+          9
+        ]
+      ],
+      "date-time": "2024-01-09T22:13:59Z",
+      "timestamp": 1704838439000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.science.org/doi/10.1126/sciadv.adj6367"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          11,
+          24
+        ]
+      ]
+    },
+    "references-count": 57,
+    "journal-issue": {
+      "issue": "47",
+      "published-print": {
+        "date-parts": [
+          [
+            2023,
+            11,
+            24
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1126/sciadv.adj6367"
+    ],
+    "URL": "https://doi.org/10.1126/sciadv.adj6367",
+    "relation": {},
+    "ISSN": [
+      "2375-2548"
+    ],
+    "issn-type": [
+      {
+        "value": "2375-2548",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          11,
+          24
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2023-07-07",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2023-10-25",
+        "order": 1,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2023-11-24",
+        "order": 2,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ],
+    "article-number": "eadj6367"
+  },
+  "mix2019": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          10
+        ]
+      ],
+      "date-time": "2026-09-10T07:46:56Z",
+      "timestamp": 1789026416396,
+      "version": "build-2803163510"
+    },
+    "reference-count": 46,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "11",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2019,
+              10,
+              14
+            ]
+          ],
+          "date-time": "2019-10-14T00:00:00Z",
+          "timestamp": 1571011200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.springer.com/tdm"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2019,
+              10,
+              14
+            ]
+          ],
+          "date-time": "2019-10-14T00:00:00Z",
+          "timestamp": 1571011200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.springer.com/tdm"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100009729",
+        "name": "Ludwig Institute for Cancer Research",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/100009729",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "name": "ISREC Foundation thanks to a donation from the Biltema Foundation."
+      },
+      {
+        "DOI": "10.13039/501100008597",
+        "name": "Fondation Medic",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100008597",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "name": "Swiss Cancer League"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Nat Biotechnol"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          11
+        ]
+      ]
+    },
+    "DOI": "10.1038/s41587-019-0289-6",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2019,
+          10,
+          14
+        ]
+      ],
+      "date-time": "2019-10-14T12:08:10Z",
+      "timestamp": 1571054890000
+    },
+    "page": "1283-1286",
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 294,
+    "title": [
+      "Robust prediction of HLA class II epitopes by deep motif deconvolution of immunopeptidomes"
+    ],
+    "prefix": "10.1038",
+    "volume": "37",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-0100-0323",
+        "authenticated-orcid": false,
+        "given": "Julien",
+        "family": "Racle",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Justine",
+        "family": "Michaux",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Georg Alexander",
+        "family": "Rockinger",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Marion",
+        "family": "Arnaud",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sara",
+        "family": "Bobisse",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Chloe",
+        "family": "Chong",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Philippe",
+        "family": "Guillaume",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "George",
+        "family": "Coukos",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Alexandre",
+        "family": "Harari",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7405-5747",
+        "authenticated-orcid": false,
+        "given": "Camilla",
+        "family": "Jandus",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1934-954X",
+        "authenticated-orcid": false,
+        "given": "Michal",
+        "family": "Bassani-Sternberg",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-3952-0930",
+        "authenticated-orcid": false,
+        "given": "David",
+        "family": "Gfeller",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2019,
+          10,
+          14
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "289_CR1",
+        "doi-asserted-by": "publisher",
+        "first-page": "823",
+        "DOI": "10.1038/nri3084",
+        "volume": "11",
+        "author": "J Neefjes",
+        "year": "2011",
+        "unstructured": "Neefjes, J., Jongsma, M. L. M., Paul, P. & Bakke, O. Nat. Rev. Immunol. 11, 823\u2013836 (2011).",
+        "journal-title": "Nat. Rev. Immunol."
+      },
+      {
+        "key": "289_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "723",
+        "DOI": "10.1038/nature21433",
+        "volume": "543",
+        "author": "MS Khodadoust",
+        "year": "2017",
+        "unstructured": "Khodadoust, M. S. et al. Nature 543, 723\u2013727 (2017).",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "289_CR3",
+        "doi-asserted-by": "publisher",
+        "first-page": "81",
+        "DOI": "10.1038/nm.3773",
+        "volume": "21",
+        "author": "C Linnemann",
+        "year": "2015",
+        "unstructured": "Linnemann, C. et al. Nat. Med. 21, 81\u201385 (2015).",
+        "journal-title": "Nat. Med."
+      },
+      {
+        "key": "289_CR4",
+        "doi-asserted-by": "publisher",
+        "first-page": "692",
+        "DOI": "10.1038/nature14426",
+        "volume": "520",
+        "author": "S Kreiter",
+        "year": "2015",
+        "unstructured": "Kreiter, S. et al. Nature 520, 692\u2013696 (2015).",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "289_CR5",
+        "doi-asserted-by": "publisher",
+        "first-page": "641",
+        "DOI": "10.1007/s00251-015-0873-y",
+        "volume": "67",
+        "author": "M Andreatta",
+        "year": "2015",
+        "unstructured": "Andreatta, M. et al. Immunogenetics 67, 641\u2013650 (2015).",
+        "journal-title": "Immunogenetics"
+      },
+      {
+        "key": "289_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "1522",
+        "DOI": "10.1093/bioinformatics/btx820",
+        "volume": "34",
+        "author": "M Andreatta",
+        "year": "2018",
+        "unstructured": "Andreatta, M. et al. Bioinformatics 34, 1522\u20131528 (2018).",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "289_CR7",
+        "doi-asserted-by": "publisher",
+        "first-page": "533",
+        "DOI": "10.1074/mcp.TIR117.000383",
+        "volume": "17",
+        "author": "C Chong",
+        "year": "2018",
+        "unstructured": "Chong, C. et al. Mol. Cell. Proteomics 17, 533\u2013548 (2018).",
+        "journal-title": "Mol. Cell. Proteomics"
+      },
+      {
+        "key": "289_CR8",
+        "doi-asserted-by": "publisher",
+        "first-page": "1700246",
+        "DOI": "10.1002/pmic.201700246",
+        "volume": "18",
+        "author": "D Ritz",
+        "year": "2018",
+        "unstructured": "Ritz, D. et al. Proteomics 18, 1700246 (2018).",
+        "journal-title": "Proteomics"
+      },
+      {
+        "key": "289_CR9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/ncomms13404",
+        "volume": "7",
+        "author": "M Bassani-Sternberg",
+        "year": "2016",
+        "unstructured": "Bassani-Sternberg, M. et al. Nat. Commun. 7, 13404 (2016).",
+        "journal-title": "Nat. Commun."
+      },
+      {
+        "key": "289_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "2492",
+        "DOI": "10.4049/jimmunol.1600808",
+        "volume": "197",
+        "author": "M Bassani-Sternberg",
+        "year": "2016",
+        "unstructured": "Bassani-Sternberg, M. & Gfeller, D. J. Immunol. 197, 2492\u20132499 (2016).",
+        "journal-title": "J. Immunol."
+      },
+      {
+        "key": "289_CR11",
+        "doi-asserted-by": "publisher",
+        "first-page": "e1005725",
+        "DOI": "10.1371/journal.pcbi.1005725",
+        "volume": "13",
+        "author": "M Bassani-Sternberg",
+        "year": "2017",
+        "unstructured": "Bassani-Sternberg, M. et al. PLoS Comput. Biol. 13, e1005725 (2017).",
+        "journal-title": "PLoS Comput. Biol."
+      },
+      {
+        "key": "289_CR12",
+        "doi-asserted-by": "publisher",
+        "first-page": "315",
+        "DOI": "10.1016/j.immuni.2017.02.007",
+        "volume": "46",
+        "author": "JG Abelin",
+        "year": "2017",
+        "unstructured": "Abelin, J. G. et al. Immunity 46, 315\u2013326 (2017).",
+        "journal-title": "Immunity"
+      },
+      {
+        "key": "289_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "3360",
+        "DOI": "10.4049/jimmunol.1700893",
+        "volume": "199",
+        "author": "V Jurtz",
+        "year": "2017",
+        "unstructured": "Jurtz, V. et al. J. Immunol. 199, 3360\u20133368 (2017).",
+        "journal-title": "J. Immunol."
+      },
+      {
+        "key": "289_CR14",
+        "doi-asserted-by": "publisher",
+        "first-page": "55",
+        "DOI": "10.1038/nbt.4313",
+        "volume": "37",
+        "author": "B Bulik-Sullivan",
+        "year": "2019",
+        "unstructured": "Bulik-Sullivan, B. et al. Nat. Biotechnol. 37, 55\u201363 (2019).",
+        "journal-title": "Nat. Biotechnol."
+      },
+      {
+        "key": "289_CR15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s13073-018-0594-6",
+        "volume": "10",
+        "author": "C Barra",
+        "year": "2018",
+        "unstructured": "Barra, C. et al. Genome Med. 10, 84 (2018).",
+        "journal-title": "Genome Med."
+      },
+      {
+        "key": "289_CR16",
+        "doi-asserted-by": "publisher",
+        "first-page": "445",
+        "DOI": "10.1007/s00251-019-01122-z",
+        "volume": "71",
+        "author": "C Garde",
+        "year": "2019",
+        "unstructured": "Garde, C. et al. Immunogenetics 71, 445\u2013454 (2019).",
+        "journal-title": "Immunogenetics"
+      },
+      {
+        "key": "289_CR17",
+        "doi-asserted-by": "publisher",
+        "first-page": "W344",
+        "DOI": "10.1093/nar/gkx276",
+        "volume": "45",
+        "author": "M Nielsen",
+        "year": "2017",
+        "unstructured": "Nielsen, M. & Andreatta, M. Nucleic Acids Res. 45, W344\u2013W349 (2017).",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "289_CR18",
+        "doi-asserted-by": "publisher",
+        "first-page": "W458",
+        "DOI": "10.1093/nar/gkx248",
+        "volume": "45",
+        "author": "M Andreatta",
+        "year": "2017",
+        "unstructured": "Andreatta, M., Alvarez, B. & Nielsen, M. Nucleic Acids Res. 45, W458\u2013W463 (2017).",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "289_CR19",
+        "doi-asserted-by": "publisher",
+        "first-page": "D339",
+        "DOI": "10.1093/nar/gky1006",
+        "volume": "47",
+        "author": "R Vita",
+        "year": "2019",
+        "unstructured": "Vita, R. et al. Nucleic Acids Res. 47, D339\u2013D343 (2019).",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "289_CR20",
+        "doi-asserted-by": "publisher",
+        "first-page": "394",
+        "DOI": "10.1111/imm.12889",
+        "volume": "154",
+        "author": "KK Jensen",
+        "year": "2018",
+        "unstructured": "Jensen, K. K. et al. Immunology 154, 394\u2013406 (2018).",
+        "journal-title": "Immunology"
+      },
+      {
+        "key": "289_CR21",
+        "unstructured": "Bailey, T. L. & Elkan, C. Fitting a mixture model by expectation maximization to discover motifs in biopolymers. in Proc. Second International Conference on Intelligent Systems for Molecular Biology (eds Altman, R., Brutlag, D., Karp, P., Lathrop, R., & Searls, D.) 28\u201336 (AAAI, 1994)."
+      },
+      {
+        "key": "289_CR22",
+        "doi-asserted-by": "publisher",
+        "first-page": "230",
+        "DOI": "10.1007/BF00188785",
+        "volume": "39",
+        "author": "K Falk",
+        "year": "1994",
+        "unstructured": "Falk, K., R\u00f6tzschke, O., Stevanov\u00edc, S., Jung, G. & Rammensee, H.-G. Immunogenetics 39, 230\u2013242 (1994).",
+        "journal-title": "Immunogenetics"
+      },
+      {
+        "key": "289_CR23",
+        "doi-asserted-by": "publisher",
+        "first-page": "15",
+        "DOI": "10.1189/jlb.6HI0216-069R",
+        "volume": "101",
+        "author": "MT Ciudad",
+        "year": "2017",
+        "unstructured": "Ciudad, M. T. et al. J. Leukoc. Biol. 101, 15\u201327 (2017).",
+        "journal-title": "J. Leukoc. Biol."
+      },
+      {
+        "key": "289_CR24",
+        "doi-asserted-by": "publisher",
+        "first-page": "3705",
+        "DOI": "10.4049/jimmunol.1800914",
+        "volume": "201",
+        "author": "D Gfeller",
+        "year": "2018",
+        "unstructured": "Gfeller, D. et al. J. Immunol. 201, 3705\u20133716 (2018).",
+        "journal-title": "J. Immunol."
+      },
+      {
+        "key": "289_CR25",
+        "doi-asserted-by": "publisher",
+        "first-page": "3983",
+        "DOI": "10.4049/jimmunol.1200626",
+        "volume": "189",
+        "author": "L Yin",
+        "year": "2012",
+        "unstructured": "Yin, L., Calvo-Calle, J. M., Dominguez-Amorocho, O. & Stern, L. J. J. Immunol. 189, 3983\u20133994 (2012).",
+        "journal-title": "J. Immunol."
+      },
+      {
+        "key": "289_CR26",
+        "doi-asserted-by": "publisher",
+        "first-page": "6122",
+        "DOI": "10.1158/1078-0432.CCR-10-1297",
+        "volume": "16",
+        "author": "ME Dudley",
+        "year": "2010",
+        "unstructured": "Dudley, M. E. et al. Clin. Cancer Res. 16, 6122\u20136131 (2010).",
+        "journal-title": "Clin. Cancer Res."
+      },
+      {
+        "key": "289_CR27",
+        "doi-asserted-by": "publisher",
+        "first-page": "1117",
+        "DOI": "10.1016/j.jcyt.2014.02.004",
+        "volume": "16",
+        "author": "M Donia",
+        "year": "2014",
+        "unstructured": "Donia, M., Larsen, S. M., Met, \u00d6. & Svane, I. M. Cytotherapy 16, 1117\u20131120 (2014).",
+        "journal-title": "Cytotherapy"
+      },
+      {
+        "key": "289_CR28",
+        "doi-asserted-by": "publisher",
+        "first-page": "D447",
+        "DOI": "10.1093/nar/gkv1145",
+        "volume": "44",
+        "author": "JA Vizca\u00edno",
+        "year": "2016",
+        "unstructured": "Vizca\u00edno, J. A. et al. Nucleic Acids Res. 44, D447\u2013D456 (2016).",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "289_CR29",
+        "doi-asserted-by": "publisher",
+        "first-page": "1367",
+        "DOI": "10.1038/nbt.1511",
+        "volume": "26",
+        "author": "J Cox",
+        "year": "2008",
+        "unstructured": "Cox, J. & Mann, M. Nat. Biotechnol. 26, 1367\u20131372 (2008).",
+        "journal-title": "Nat. Biotechnol."
+      },
+      {
+        "key": "289_CR30",
+        "doi-asserted-by": "publisher",
+        "first-page": "484",
+        "DOI": "10.1038/msb.2011.18",
+        "volume": "7",
+        "author": "D Gfeller",
+        "year": "2011",
+        "unstructured": "Gfeller, D. et al. Mol. Syst. Biol. 7, 484 (2011).",
+        "journal-title": "Mol. Syst. Biol."
+      },
+      {
+        "key": "289_CR31",
+        "doi-asserted-by": "publisher",
+        "first-page": "3645",
+        "DOI": "10.1093/bioinformatics/btx469",
+        "volume": "33",
+        "author": "O Wagih",
+        "year": "2017",
+        "unstructured": "Wagih, O. Bioinformatics 33, 3645\u20133647 (2017).",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "289_CR32",
+        "doi-asserted-by": "publisher",
+        "first-page": "1388",
+        "DOI": "10.1093/bioinformatics/bth100",
+        "volume": "20",
+        "author": "M Nielsen",
+        "year": "2004",
+        "unstructured": "Nielsen, M. et al. Bioinformatics 20, 1388\u20131397 (2004).",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "289_CR33",
+        "doi-asserted-by": "publisher",
+        "first-page": "5576",
+        "DOI": "10.1074/jbc.M115.655738",
+        "volume": "291",
+        "author": "CC Clement",
+        "year": "2016",
+        "unstructured": "Clement, C. C. et al. J. Biol. Chem. 291, 5576\u20135595 (2016).",
+        "journal-title": "J. Biol. Chem."
+      },
+      {
+        "key": "289_CR34",
+        "doi-asserted-by": "publisher",
+        "first-page": "2273",
+        "DOI": "10.1002/eji.201243280",
+        "volume": "43",
+        "author": "JA Collado",
+        "year": "2013",
+        "unstructured": "Collado, J. A. et al. Eur. J. Immunol. 43, 2273\u20132282 (2013).",
+        "journal-title": "Eur. J. Immunol."
+      },
+      {
+        "key": "289_CR35",
+        "doi-asserted-by": "publisher",
+        "first-page": "243",
+        "DOI": "10.1038/nature22329",
+        "volume": "545",
+        "author": "JD Ooi",
+        "year": "2017",
+        "unstructured": "Ooi, J. D. et al. Nature 545, 243\u2013247 (2017).",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "289_CR36",
+        "doi-asserted-by": "publisher",
+        "first-page": "122",
+        "DOI": "10.1021/acs.jproteome.6b00386",
+        "volume": "16",
+        "author": "Q Wang",
+        "year": "2017",
+        "unstructured": "Wang, Q. et al. J. Proteome Res. 16, 122\u2013136 (2017).",
+        "journal-title": "J. Proteome Res."
+      },
+      {
+        "key": "289_CR37",
+        "doi-asserted-by": "publisher",
+        "first-page": "73",
+        "DOI": "10.1007/s00251-014-0819-9",
+        "volume": "67",
+        "author": "E Bergseng",
+        "year": "2015",
+        "unstructured": "Bergseng, E. et al. Immunogenetics 67, 73\u201384 (2015).",
+        "journal-title": "Immunogenetics"
+      },
+      {
+        "key": "289_CR38",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467-018-03301-0",
+        "volume": "9",
+        "author": "S Bobisse",
+        "year": "2018",
+        "unstructured": "Bobisse, S. et al. Nat. Commun. 9, 1092 (2018).",
+        "journal-title": "Nat. Commun."
+      },
+      {
+        "key": "289_CR39",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1038/nprot.2006.1",
+        "volume": "1",
+        "author": "PK Chattopadhyay",
+        "year": "2006",
+        "unstructured": "Chattopadhyay, P. K., Yu, J. & Roederer, M. Nat. Protoc. 1, 1\u20136 (2006).",
+        "journal-title": "Nat. Protoc."
+      },
+      {
+        "key": "289_CR40",
+        "doi-asserted-by": "publisher",
+        "first-page": "217",
+        "DOI": "10.1038/nature22991",
+        "volume": "547",
+        "author": "PA Ott",
+        "year": "2017",
+        "unstructured": "Ott, P. A. et al. Nature 547, 217\u2013221 (2017).",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "289_CR41",
+        "doi-asserted-by": "publisher",
+        "first-page": "1387",
+        "DOI": "10.1126/science.aad1253",
+        "volume": "350",
+        "author": "E Tran",
+        "year": "2015",
+        "unstructured": "Tran, E. et al. Science 350, 1387\u20131390 (2015).",
+        "journal-title": "Science"
+      },
+      {
+        "key": "289_CR42",
+        "doi-asserted-by": "publisher",
+        "first-page": "1563",
+        "DOI": "10.1172/JCI98689",
+        "volume": "128",
+        "author": "JR Veatch",
+        "year": "2018",
+        "unstructured": "Veatch, J. R. et al. J. Clin. Invest. 128, 1563\u20131568 (2018).",
+        "journal-title": "J. Clin. Invest."
+      },
+      {
+        "key": "289_CR43",
+        "doi-asserted-by": "publisher",
+        "first-page": "910",
+        "DOI": "10.1158/2326-6066.CIR-18-0402",
+        "volume": "7",
+        "author": "JR Veatch",
+        "year": "2019",
+        "unstructured": "Veatch, J. R et al. Cancer Immunol. Res. 7, 910\u2013922 (2019).",
+        "journal-title": "Cancer Immunol. Res."
+      },
+      {
+        "key": "289_CR44",
+        "doi-asserted-by": "publisher",
+        "first-page": "e122467",
+        "DOI": "10.1172/jci.insight.122467",
+        "volume": "3",
+        "author": "R Yossef",
+        "year": "2018",
+        "unstructured": "Yossef, R et al. JCI Insight 3, e122467 (2018).",
+        "journal-title": "JCI Insight"
+      },
+      {
+        "key": "289_CR45",
+        "doi-asserted-by": "publisher",
+        "first-page": "724",
+        "DOI": "10.1038/s41591-018-0040-8",
+        "volume": "24",
+        "author": "N Zacharakis",
+        "year": "2018",
+        "unstructured": "Zacharakis, N. et al. Nat. Med. 24, 724\u2013730 (2018).",
+        "journal-title": "Nat. Med."
+      },
+      {
+        "key": "289_CR46",
+        "doi-asserted-by": "publisher",
+        "first-page": "222",
+        "DOI": "10.1038/nature23003",
+        "volume": "547",
+        "author": "U Sahin",
+        "year": "2017",
+        "unstructured": "Sahin, U. et al. Nature 547, 222\u2013226 (2017).",
+        "journal-title": "Nature"
+      }
+    ],
+    "container-title": [
+      "Nature Biotechnology"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.nature.com/articles/s41587-019-0289-6.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/s41587-019-0289-6",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/s41587-019-0289-6.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2022,
+          4,
+          20
+        ]
+      ],
+      "date-time": "2022-04-20T13:08:17Z",
+      "timestamp": 1650460097000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.nature.com/articles/s41587-019-0289-6"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          10,
+          14
+        ]
+      ]
+    },
+    "references-count": 46,
+    "journal-issue": {
+      "issue": "11",
+      "published-print": {
+        "date-parts": [
+          [
+            2019,
+            11
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "289"
+    ],
+    "URL": "https://doi.org/10.1038/s41587-019-0289-6",
+    "relation": {
+      "has-preprint": [
+        {
+          "id-type": "doi",
+          "id": "10.1101/539338",
+          "asserted-by": "object"
+        }
+      ]
+    },
+    "ISSN": [
+      "1087-0156",
+      "1546-1696"
+    ],
+    "issn-type": [
+      {
+        "value": "1087-0156",
+        "type": "print"
+      },
+      {
+        "value": "1546-1696",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2019,
+          10,
+          14
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "15 February 2019",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "11 September 2019",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "14 October 2019",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "The authors declare no competing interests.",
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      }
+    ]
+  },
+  "blosum": {
+    "error": "HTTP Error 429: Too Many Requests",
+    "DOI": "10.1073/pnas.89.22.10915"
+  },
+  "af3": {
+    "error": "HTTP Error 429: Too Many Requests",
+    "DOI": "10.1038/s41586-024-07487-w"
+  },
+  "modeller": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          10
+        ]
+      ],
+      "date-time": "2026-09-10T17:31:24Z",
+      "timestamp": 1789061484970,
+      "version": "build-2803163510"
+    },
+    "reference-count": 0,
+    "publisher": "Elsevier BV",
+    "issue": "3",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              1993,
+              12,
+              1
+            ]
+          ],
+          "date-time": "1993-12-01T00:00:00Z",
+          "timestamp": 754704000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Journal of Molecular Biology"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          1993,
+          12
+        ]
+      ]
+    },
+    "DOI": "10.1006/jmbi.1993.1626",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2002,
+          10,
+          7
+        ]
+      ],
+      "date-time": "2002-10-07T12:32:14Z",
+      "timestamp": 1033993934000
+    },
+    "page": "779-815",
+    "source": "Crossref",
+    "is-referenced-by-count": 11702,
+    "title": [
+      "Comparative Protein Modelling by Satisfaction of Spatial Restraints"
+    ],
+    "prefix": "10.1006",
+    "volume": "234",
+    "author": [
+      {
+        "given": "Andrej",
+        "family": "\u0160ali",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tom L.",
+        "family": "Blundell",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "container-title": [
+      "Journal of Molecular Biology"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0022283683716268?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0022283683716268?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2019,
+          5,
+          7
+        ]
+      ],
+      "date-time": "2019-05-07T10:50:14Z",
+      "timestamp": 1557226214000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0022283683716268"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          1993,
+          12
+        ]
+      ]
+    },
+    "references-count": 0,
+    "journal-issue": {
+      "issue": "3",
+      "published-print": {
+        "date-parts": [
+          [
+            1993,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "S0022283683716268"
+    ],
+    "URL": "https://doi.org/10.1006/jmbi.1993.1626",
+    "relation": {},
+    "ISSN": [
+      "0022-2836"
+    ],
+    "issn-type": [
+      {
+        "value": "0022-2836",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          1993,
+          12
+        ]
+      ]
+    }
+  },
+  "apbs": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          10
+        ]
+      ],
+      "date-time": "2026-09-10T08:02:35Z",
+      "timestamp": 1789027355669,
+      "version": "build-2803163510"
+    },
+    "reference-count": 104,
+    "publisher": "Wiley",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2018,
+              8,
+              24
+            ]
+          ],
+          "date-time": "2018-08-24T00:00:00Z",
+          "timestamp": 1535068800000
+        },
+        "content-version": "am",
+        "delay-in-days": 304,
+        "URL": "http://onlinelibrary.wiley.com/termsAndConditions#am"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2017,
+              10,
+              24
+            ]
+          ],
+          "date-time": "2017-10-24T00:00:00Z",
+          "timestamp": 1508803200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100000057",
+        "name": "National Institute of General Medical Sciences",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "GM069702"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "GM069702"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000057",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000057",
+        "name": "National Institute of General Medical Sciences",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "GM31749"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "GM31749"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000057",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000057",
+        "name": "National Institute of General Medical Sciences",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "GM103426"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "GM103426"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000057",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000121",
+        "name": "Division of Mathematical Sciences",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "1418966"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "1418966"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000121",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Protein Science"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2018,
+          1
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>\n                    The Adaptive Poisson\u2013Boltzmann Solver (APBS) software was developed to solve the equations of continuum electrostatics for large biomolecular assemblages that have provided impact in the study of a broad range of chemical, biological, and biomedical applications. APBS addresses the three key technology challenges for understanding solvation and electrostatics in biomedical applications: accurate and efficient models for biomolecular solvation and electrostatics, robust and scalable software for applying those theories to biomolecular systems, and mechanisms for sharing and analyzing biomolecular electrostatics data in the scientific community. To address new research applications and advancing computational capabilities, we have continually updated APBS and its suite of accompanying software since its release in 2001. In this article, we discuss the models and capabilities that have recently been implemented within the APBS software package including a Poisson\u2013Boltzmann analytical and a semi\u2010analytical solver, an optimized boundary element solver, a geometry\u2010based geometric flow solvation model, a graph theory\u2010based algorithm for determining p\n                    <jats:italic>\n                      K\n                      <jats:sub>a</jats:sub>\n                    </jats:italic>\n                    values, and an improved web\u2010based visualization tool for viewing electrostatics.\n                  </jats:p>",
+    "DOI": "10.1002/pro.3280",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          24
+        ]
+      ],
+      "date-time": "2017-08-24T02:32:01Z",
+      "timestamp": 1503541921000
+    },
+    "page": "112-128",
+    "source": "Crossref",
+    "is-referenced-by-count": 2576,
+    "title": [
+      "Improvements to the\n                    <scp>APBS</scp>\n                    biomolecular solvation software suite"
+    ],
+    "prefix": "10.1002",
+    "volume": "27",
+    "author": [
+      {
+        "given": "Elizabeth",
+        "family": "Jurrus",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Pacific Northwest National Laboratory Richland Washington"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Dave",
+        "family": "Engel",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Pacific Northwest National Laboratory Richland Washington"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Keith",
+        "family": "Star",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Pacific Northwest National Laboratory Richland Washington"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kyle",
+        "family": "Monson",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Pacific Northwest National Laboratory Richland Washington"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Juan",
+        "family": "Brandi",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Pacific Northwest National Laboratory Richland Washington"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Lisa E.",
+        "family": "Felberg",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of California Berkeley California"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "David H.",
+        "family": "Brookes",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of California Berkeley California"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Leighton",
+        "family": "Wilson",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Michigan Ann Arbor Michigan"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jiahui",
+        "family": "Chen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Southern Methodist University Dallas Texas"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Karina",
+        "family": "Liles",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Pacific Northwest National Laboratory Richland Washington"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Minju",
+        "family": "Chun",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Pacific Northwest National Laboratory Richland Washington"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Peter",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Pacific Northwest National Laboratory Richland Washington"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "David W.",
+        "family": "Gohara",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "St. Louis University St. Louis Missouri"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Todd",
+        "family": "Dolinsky",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "FoodLogiQ Durham North Carolina"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Robert",
+        "family": "Konecny",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of California San Diego San Diego California"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-6892-6614",
+        "authenticated-orcid": false,
+        "given": "David R.",
+        "family": "Koes",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Pittsburgh Pittsburgh Pennsylvania"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jens Erik",
+        "family": "Nielsen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Protein Engineering Novozymes A/S Copenhagen Denmark"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Teresa",
+        "family": "Head\u2010Gordon",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of California Berkeley California"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Weihua",
+        "family": "Geng",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Southern Methodist University Dallas Texas"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Robert",
+        "family": "Krasny",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Michigan Ann Arbor Michigan"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Guo\u2010Wei",
+        "family": "Wei",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Michigan State University East Lansing Michigan"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michael J.",
+        "family": "Holst",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of California San Diego San Diego California"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "J. Andrew",
+        "family": "McCammon",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of California San Diego San Diego California"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5892-6506",
+        "authenticated-orcid": false,
+        "given": "Nathan A.",
+        "family": "Baker",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Pacific Northwest National Laboratory Richland Washington"
+          },
+          {
+            "name": "Brown University Providence Rhode Island"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "311",
+    "published-online": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          24
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_2_12_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S003358351200011X"
+      },
+      {
+        "key": "e_1_2_12_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/cr00101a005"
+      },
+      {
+        "key": "e_1_2_12_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.694508"
+      },
+      {
+        "key": "e_1_2_12_5_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1146/annurev.bb.19.060190.001505"
+      },
+      {
+        "key": "e_1_2_12_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0301-4622(98)00226-9"
+      },
+      {
+        "key": "e_1_2_12_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.bbapap.2006.08.007"
+      },
+      {
+        "key": "e_1_2_12_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.437340"
+      },
+      {
+        "key": "e_1_2_12_9_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/bip.20877"
+      },
+      {
+        "key": "e_1_2_12_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/0471466638.ch4"
+      },
+      {
+        "key": "e_1_2_12_11_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0022-2836(71)90324-X"
+      },
+      {
+        "key": "e_1_2_12_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s101890050023"
+      },
+      {
+        "key": "e_1_2_12_13_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jcc.21287"
+      },
+      {
+        "key": "e_1_2_12_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jcc.20290"
+      },
+      {
+        "key": "e_1_2_12_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/2046-1682-5-9"
+      },
+      {
+        "key": "e_1_2_12_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/qua.24481"
+      },
+      {
+        "key": "e_1_2_12_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jcc.1032"
+      },
+      {
+        "key": "e_1_2_12_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jcc.20769"
+      },
+      {
+        "key": "e_1_2_12_19_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.181342398"
+      },
+      {
+        "key": "e_1_2_12_20_1",
+        "unstructured": "\u201cAPBS website\u201d. URL:http://www.poissonboltzmann.org/."
+      },
+      {
+        "key": "e_1_2_12_21_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "KrishnanS ClementiL RenJ PapadopoulosP LiW\u201cDesign and evaluation of Opal2: A toolkit for scientific software as a service\u201d. In:Services\u2010I 2009 World Conference onIEEE.2009 pp. 709\u2013716.url:http://nbcr-222.ucsd.edu/opal2/dashboard.",
+        "DOI": "10.1109/SERVICES-I.2009.52"
+      },
+      {
+        "key": "e_1_2_12_22_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jcc.20289"
+      },
+      {
+        "key": "e_1_2_12_23_1",
+        "unstructured": "BakerD.Rosetta website.url:https://www.rosettacommons.org/."
+      },
+      {
+        "key": "e_1_2_12_24_1",
+        "unstructured": "PonderJ.TINKER website.url:https://dasher.wustl.edu/tinker/."
+      },
+      {
+        "key": "e_1_2_12_25_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1749-4699/5/1/015005"
+      },
+      {
+        "key": "e_1_2_12_26_1",
+        "unstructured": "iAPBS website.url:https://mccammon.ucsd.edu/iapbs/."
+      },
+      {
+        "key": "e_1_2_12_27_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/1096-987X(20001130)21:15<1319::AID-JCC1>3.0.CO;2-8"
+      },
+      {
+        "key": "e_1_2_12_28_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/1096-987X(20001130)21:15<1343::AID-JCC2>3.0.CO;2-K"
+      },
+      {
+        "key": "e_1_2_12_29_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1147/rd.453.0427"
+      },
+      {
+        "key": "e_1_2_12_30_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/ct050263p"
+      },
+      {
+        "key": "e_1_2_12_31_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jcc.24528"
+      },
+      {
+        "key": "e_1_2_12_32_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/ct100145f"
+      },
+      {
+        "key": "e_1_2_12_33_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/ct400048q"
+      },
+      {
+        "key": "e_1_2_12_34_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/3-540-63827-X_66"
+      },
+      {
+        "key": "e_1_2_12_35_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jcc.21256"
+      },
+      {
+        "key": "e_1_2_12_36_1",
+        "unstructured": "Protein Data Bank Contents Guide: Atomic Coordinate Entry Format Description. Version 3.3.url:http://www.wwpdb.org/documentation/file-format-content/format33/v3.3.html.2012."
+      },
+      {
+        "key": "e_1_2_12_37_1",
+        "unstructured": "PDBx/mmCIF Dictionary Resources.url:http://mmcif.wwpdb.org/."
+      },
+      {
+        "key": "e_1_2_12_38_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/bioinformatics/bti082"
+      },
+      {
+        "key": "e_1_2_12_39_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/nar/gkh381"
+      },
+      {
+        "key": "e_1_2_12_40_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/nar/gkm276"
+      },
+      {
+        "key": "e_1_2_12_41_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/ct200133y"
+      },
+      {
+        "key": "e_1_2_12_42_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/prot.20660"
+      },
+      {
+        "key": "e_1_2_12_43_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/acs.jpcb.6b02059"
+      },
+      {
+        "key": "e_1_2_12_44_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/prot.1053"
+      },
+      {
+        "key": "e_1_2_12_45_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/1096-987X(200009)21:12<1049::AID-JCC3>3.0.CO;2-F"
+      },
+      {
+        "key": "e_1_2_12_46_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jcc.20065"
+      },
+      {
+        "key": "e_1_2_12_47_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/j100058a043"
+      },
+      {
+        "key": "e_1_2_12_48_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/prot.21110"
+      },
+      {
+        "key": "e_1_2_12_49_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/ct049834o"
+      },
+      {
+        "key": "e_1_2_12_50_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/jp063479b"
+      },
+      {
+        "key": "e_1_2_12_51_1",
+        "first-page": "139",
+        "article-title": "Adaptive numerical treatment of elliptic systems on manifolds",
+        "volume": "15",
+        "author": "Holst M",
+        "year": "2001",
+        "journal-title": "J Comput Math"
+      },
+      {
+        "key": "e_1_2_12_52_1",
+        "unstructured": "FEtk website.url:http://www.fetk.org."
+      },
+      {
+        "key": "e_1_2_12_53_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0006-3495(03)75029-2"
+      },
+      {
+        "key": "e_1_2_12_54_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jcc.540140114"
+      },
+      {
+        "key": "e_1_2_12_55_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jcp.2010.06.036"
+      },
+      {
+        "key": "e_1_2_12_56_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00285-011-0402-z"
+      },
+      {
+        "key": "e_1_2_12_57_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.4745084"
+      },
+      {
+        "key": "e_1_2_12_58_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.4832900"
+      },
+      {
+        "key": "e_1_2_12_59_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/1472-6750-13-2"
+      },
+      {
+        "key": "e_1_2_12_60_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jcp.2013.03.056"
+      },
+      {
+        "key": "e_1_2_12_61_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jcp.2009.02.022"
+      },
+      {
+        "key": "e_1_2_12_62_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0021-9991(91)90043-K"
+      },
+      {
+        "key": "e_1_2_12_63_1",
+        "unstructured": "SannerM OlsonA SpehnerJC.Fast and robust computation of molecular surfaces. In:Proc 11th ACM Symp Comp Geom. ACM.1995 pp.C6\u2013C7."
+      },
+      {
+        "key": "e_1_2_12_64_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0059744"
+      },
+      {
+        "key": "e_1_2_12_65_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0263-7855(96)00018-5"
+      },
+      {
+        "key": "e_1_2_12_66_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1146/annurev.physchem.51.1.129"
+      },
+      {
+        "key": "e_1_2_12_67_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.436761"
+      },
+      {
+        "key": "e_1_2_12_68_1",
+        "volume-title": "The PyMOL Molecular Graphics System, Version 1.8",
+        "author": "Schr\u00f6dinger LLC",
+        "year": "2015"
+      },
+      {
+        "key": "e_1_2_12_69_1",
+        "unstructured": "\u201cPyMOL website\u201d. URL:http://www.pymol.org."
+      },
+      {
+        "key": "e_1_2_12_70_1",
+        "unstructured": "\u201cVMD website\u201d. URL:http://www.ks.uiuc.edu/Research/vmd/."
+      },
+      {
+        "key": "e_1_2_12_71_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.str.2010.12.023"
+      },
+      {
+        "key": "e_1_2_12_72_1",
+        "unstructured": "MGLTools (AutoDock PMV Vision) website. URL:http://mgltools.scripps.edu/."
+      },
+      {
+        "key": "e_1_2_12_73_1",
+        "unstructured": "Chimera website. URL:https://www.cgl.ucsf.edu/chimera/."
+      },
+      {
+        "key": "e_1_2_12_74_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jcc.20084"
+      },
+      {
+        "key": "e_1_2_12_75_1",
+        "unstructured": "Jmol website. URL:http://jmol.sourceforge.net/."
+      },
+      {
+        "key": "e_1_2_12_76_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/bmb.2006.494034042644"
+      },
+      {
+        "key": "e_1_2_12_77_1",
+        "unstructured": "KoesD.3Dmol.js.url:http://3dmol.csb.pitt.edu/(visited on2016)."
+      },
+      {
+        "key": "e_1_2_12_78_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/bioinformatics/btu829"
+      },
+      {
+        "key": "e_1_2_12_79_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jcc.21720"
+      },
+      {
+        "key": "e_1_2_12_80_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nature12595"
+      },
+      {
+        "key": "e_1_2_12_81_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/nn405019v"
+      },
+      {
+        "key": "e_1_2_12_82_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.biomaterials.2014.04.067"
+      },
+      {
+        "key": "e_1_2_12_83_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1146/annurev-biochem-060409-092720"
+      },
+      {
+        "key": "e_1_2_12_84_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jcc.23304"
+      },
+      {
+        "key": "e_1_2_12_85_1",
+        "unstructured": "EvangelidisT BourneP XieL XieL(2009) An integrated workflow for proteome\u2010wide off\u2010target identification and polypharmacology drug design. In:International Conference on Bioinformatics and Biomedicine Workshops. IEEE. pp. 32\u201339. doi: 2010.1109/BIBMW.2012.6470348."
+      },
+      {
+        "key": "e_1_2_12_86_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/ct400137q"
+      },
+      {
+        "key": "e_1_2_12_87_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.str.2015.05.006"
+      },
+      {
+        "key": "e_1_2_12_88_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/nar/gkn181"
+      },
+      {
+        "key": "e_1_2_12_89_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cpc.2010.07.022"
+      },
+      {
+        "key": "e_1_2_12_90_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jcc.23971"
+      },
+      {
+        "key": "e_1_2_12_91_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1529/biophysj.106.102533"
+      },
+      {
+        "key": "e_1_2_12_92_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.bpc.2007.01.003"
+      },
+      {
+        "key": "e_1_2_12_93_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1529/biophysj.104.041517"
+      },
+      {
+        "key": "e_1_2_12_94_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0076-6879(04)83008-8"
+      },
+      {
+        "key": "e_1_2_12_95_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/jp212532h"
+      },
+      {
+        "key": "e_1_2_12_96_1",
+        "unstructured": "HolstMJClean Object\u2010Oriented C. URL:http://fetk.org/codes/maloc/api/html/index.html."
+      },
+      {
+        "key": "e_1_2_12_97_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jcc.540090407"
+      },
+      {
+        "key": "e_1_2_12_98_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0010-4655(98)00016-2"
+      },
+      {
+        "key": "e_1_2_12_99_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.2714528"
+      },
+      {
+        "key": "e_1_2_12_100_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/(SICI)1096-987X(19970130)18:2<268::AID-JCC11>3.0.CO;2-E"
+      },
+      {
+        "key": "e_1_2_12_101_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0301-4622(98)00236-1"
+      },
+      {
+        "key": "e_1_2_12_102_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jcc.23181"
+      },
+      {
+        "key": "e_1_2_12_103_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/0907058"
+      },
+      {
+        "key": "e_1_2_12_104_1",
+        "unstructured": "OpenDX.http://fetk.org/codes/maloc/api/html/index.html.url:http://www.opendx.org/."
+      },
+      {
+        "key": "e_1_2_12_105_1",
+        "volume-title": "ParaView: an end\u2010user tool for large data visualization",
+        "author": "Ahrens J",
+        "year": "2005"
+      }
+    ],
+    "container-title": [
+      "Protein Science"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fpro.3280",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/pro.3280",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/pro.3280",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://onlinelibrary.wiley.com/doi/am-pdf/10.1002/pro.3280",
+        "content-type": "application/pdf",
+        "content-version": "am",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/pro.3280",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          9,
+          13
+        ]
+      ],
+      "date-time": "2023-09-13T18:51:57Z",
+      "timestamp": 1694631117000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://onlinelibrary.wiley.com/doi/10.1002/pro.3280"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          24
+        ]
+      ]
+    },
+    "references-count": 104,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2018,
+            1
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1002/pro.3280"
+    ],
+    "URL": "https://doi.org/10.1002/pro.3280",
+    "archive": [
+      "Portico"
+    ],
+    "relation": {},
+    "ISSN": [
+      "0961-8368",
+      "1469-896X"
+    ],
+    "issn-type": [
+      {
+        "value": "0961-8368",
+        "type": "print"
+      },
+      {
+        "value": "1469-896X",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          24
+        ]
+      ]
+    }
+  },
+  "thomas": {
+    "error": "HTTP Error 429: Too Many Requests",
+    "DOI": "10.1016/j.cell.2025.12.032"
+  },
+  "atlas": {
+    "error": "HTTP Error 429: Too Many Requests",
+    "DOI": "10.1136/jitc-2020-002071"
+  }
+}
