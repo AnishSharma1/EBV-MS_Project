@@ -1,0 +1,2 @@
+b419e8d32cf9c3f3a507eafcf9b2e069f1d18b6e271d889a798300eada4e9219  output/latex_manuscript_v7/USER_AUTHORED_GOOGLE_DOCS_MASTER.txt
+70d21a8fc62c971ca312e2f5bc8d30119c5025cf78b6fd6fb062cef9012a9990  output/latex_manuscript_v7/main.tex

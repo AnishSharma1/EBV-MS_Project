@@ -76,39 +76,54 @@ To prevent over-interpretation of computational findings, this study enforces ex
 
 ---
 
-## 5. Repository Structure
+## 5. Standardized 5-Directory Repository Architecture
 
 ```
 EBV-MS_Project/
-├── manuscript/                       # Submission-ready manuscript & supplement
-│   ├── paper_v9_working_main.pdf     # Compiled main manuscript PDF
-│   ├── paper_v9_working_supplement.pdf # Compiled independent supplement PDF
-│   ├── main.tex                      # Main LaTeX source
-│   ├── supplement.tex                # Supplement LaTeX source
-│   ├── references.tex                # Shared bibliography
-│   ├── BMC_SUBMISSION_FIELDS.md      # Journal submission metadata
-│   ├── figures/                      # Main figures (Figures 1–4)
-│   └── supplement_figures/           # Supplementary figures (Figures S1–S3)
+├── plans/                            # Study designs, protocols & statistical specifications
+│   ├── study_scope.md                # Research question & presentation boundaries
+│   ├── statistical_plan.md           # Discovery screen & constrained-null design
+│   ├── publication_strategy.md       # Target journal & thesis outline
+│   └── README.md                     # Directory guide
+│
+├── code/                             # Analysis code, test suites & staging tools
+│   ├── pipeline/                     # Modular analysis scripts
+│   ├── tests/                        # Repository integrity tests
+│   ├── staging/                      # Staging & packaging utilities
+│   └── README.md                     # Execution guide
+│
+├── outputs/                          # Derived tables, candidate rankings & benchmark manifests
+│   ├── ebv_ms_benchmark_manifest/    # Benchmark reference manifests
+│   ├── ebv_ms_model_package/         # Processed model metric outputs
+│   └── README.md                     # Output catalog & evidence ledger
+│
+├── figures/                          # Publication figures & visual assets
+│   ├── manuscript/                   # Figures 1–4 (vector PDF & SVG)
+│   ├── supplement/                   # Supplementary figures S1–S3
+│   └── README.md                     # Figure captions & computational sources
+│
+├── logs/                             # Verification logs, audit trails & QA reports
+│   ├── provenance_audits/            # Sentence-level text provenance logs
+│   ├── citation_audits/              # Reference verification audits
+│   ├── quality_assurance/            # Language & formatting review logs
+│   ├── package_verification/         # Cryptographic SHA-256 manifests
+│   └── README.md                     # Audit index
+│
+├── manuscript/                       # Submission-ready publication deliverables
+│   ├── paper_v9_working_main.pdf     # Main manuscript PDF
+│   ├── paper_v9_working_supplement.pdf # Independent supplement PDF
+│   ├── main.tex & supplement.tex     # Complete LaTeX sources
+│   └── BMC_SUBMISSION_FIELDS.md      # Journal submission metadata
 │
 ├── computational_package/            # Canonical reproducible package (Leg 2)
-│   ├── README.md                     # Pipeline execution guide
-│   ├── MANIFEST.sha256               # Cryptographic verification manifest
-│   ├── docs/                         # Scope, evidence limits, and policies
-│   ├── scripts/                      # Portable Python and R analysis scripts
-│   ├── data/                         # Curated input tables and sequence libraries
-│   └── results/                      # Frozen score tables, audits, and gates
+│   ├── MANIFEST.sha256               # Checksum manifest
+│   ├── scripts/                      # Verified pipeline scripts
+│   ├── data/                         # Curated input libraries
+│   └── results/                      # Frozen score tables & decision gates
 │
-├── notebooks/                        # Exploratory phase Jupyter notebooks (Leg 1)
-│   ├── README.md                     # Detailed Leg 1 vs. Leg 2 documentation
-│   └── *.ipynb                       # Phase 1 exploratory notebooks
-│
-├── docs/                             # Protocols and study specifications
-│   ├── SCOPE_AND_LIMITS.md           # Formal claim boundary specification
-│   └── DATA_AND_ARTIFACT_POLICY.md   # Data retention and exclusion policies
-│
-└── archive/                          # Historical early scripts and initial plans
-    ├── README.md                     # Provenance documentation
-    └── early_scripts/                # Preserved early batch scripts
+└── notebooks/                        # Exploratory phase Jupyter notebooks (Leg 1)
+    ├── README.md                     # Leg 1 context & provenance notes
+    └── *.ipynb                       # Phase 1 interactive notebooks
 ```
 
 ---

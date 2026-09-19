@@ -1,0 +1,3 @@
+Source: manuscript version (7). Wording preserved, including unresolved scientific/editing issues. Tables rebuilt from original cells; duplicate Table 2 caption removed; headings renumbered automatically. Figures extracted without redrawing.
+
+Outstanding: IEDB assay 1774674 original Hansen 2007 publication remains unresolved; no invented citation inserted. APBS and HLA Ligand Atlas references included as available references but not assigned to manuscript claims absent explicit implementation/resource naming. Specific protein accessions and original structural PDB records still need a supporting data table. References provide metadata, not validation of the manuscript thresholds or original results. No Conclusion added because none occurs in source.
