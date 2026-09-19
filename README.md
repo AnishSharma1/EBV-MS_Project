@@ -26,7 +26,31 @@ We perform a systematic within-allele discovery screen of **6,400 allele-specifi
 
 ---
 
-## 2. Key Prioritized Candidates
+## 2. Study Evolution: Two-Leg Architecture
+
+This project progressed through two distinct methodological phases:
+
+### Leg 1: Exploratory Prototyping Phase
+- **Focus**: Early heuristic screening, single-chain AlphaFold 2 and ColabFold modeling, exploratory machine learning feature extraction, and preliminary TCR docking.
+- **Artifacts**: Preserved for historical provenance and transparency in [`notebooks/`](notebooks/) (`AlphaFold2.ipynb`, `Colabfold.ipynb`, `Cross Reactivity.ipynb`, etc.) and [`archive/`](archive/).
+- **Critical Methodological Lessons**:
+  1. Uncalibrated docking scores and generic sequence matching generated excessive false-positive candidate lists.
+  2. Lack of register resolution obscured whether predicted matching residues faced the TCR or were buried in MHC anchor pockets.
+  3. The classic Hy.2E11 BALF5–MBP positive-control system was clarified to be an allele-switching system (`BALF5` presented by `DRB5*01:01` [DR2a]; `MBP` presented by `DRB1*15:01` [DR2b]) rather than a single-allele DR15 mimicry event.
+
+### Leg 2: Current Publication Architecture (Rebuilt & Calibrated)
+- **Focus**: The definitive, reproducible computational pipeline supporting the submitted manuscript.
+- **Artifacts**: Implemented in [`computational_package/`](computational_package/) and [`manuscript/`](manuscript/).
+- **Upgrades**:
+  1. Expansion to a four-allele class II universe with strict within-allele ranking (6,400 pairs).
+  2. Score normalization restricted strictly to solvent-exposed, TCR-facing registers (P2, P3, P5, P7, P8).
+  3. Multi-predictor binding consensus (NetMHCIIpan 4.3 + MixMHC2pred 2.1) and proteome-wide null background screens (11.25M 9-mers).
+  4. AlphaFold 3 parent-versus-nested structural ensemble sensitivity verifying core register invariance.
+  5. Negative control gates: APBS electrostatics and uncalibrated TCRModel2 docking were benchmarked, failed validation gates, and were strictly excluded from candidate scoring.
+
+---
+
+## 3. Key Prioritized Candidates
 
 | Candidate ID | Allele | Viral Peptide | Human Self Peptide | Screen Rank | Routing Tier | Evidence & Status |
 |---|---|---|---|---|---|---|
@@ -39,7 +63,7 @@ We perform a systematic within-allele discovery screen of **6,400 allele-specifi
 
 ---
 
-## 3. Strict Scientific Claim Boundaries
+## 4. Strict Scientific Claim Boundaries
 
 To prevent over-interpretation of computational findings, this study enforces explicit boundaries:
 - **Supported**: Auditable candidate ranking, allele-specific register evaluation, structural model quality control, and experimental routing prioritization.
@@ -52,7 +76,7 @@ To prevent over-interpretation of computational findings, this study enforces ex
 
 ---
 
-## 4. Repository Structure
+## 5. Repository Structure
 
 ```
 EBV-MS_Project/
@@ -66,7 +90,7 @@ EBV-MS_Project/
 │   ├── figures/                      # Main figures (Figures 1–4)
 │   └── supplement_figures/           # Supplementary figures (Figures S1–S3)
 │
-├── computational_package/            # Canonical reproducible package
+├── computational_package/            # Canonical reproducible package (Leg 2)
 │   ├── README.md                     # Pipeline execution guide
 │   ├── MANIFEST.sha256               # Cryptographic verification manifest
 │   ├── docs/                         # Scope, evidence limits, and policies
@@ -74,8 +98,8 @@ EBV-MS_Project/
 │   ├── data/                         # Curated input tables and sequence libraries
 │   └── results/                      # Frozen score tables, audits, and gates
 │
-├── notebooks/                        # Exploratory phase Jupyter notebooks
-│   ├── README.md                     # Context & provenance of initial prototypes
+├── notebooks/                        # Exploratory phase Jupyter notebooks (Leg 1)
+│   ├── README.md                     # Detailed Leg 1 vs. Leg 2 documentation
 │   └── *.ipynb                       # Phase 1 exploratory notebooks
 │
 ├── docs/                             # Protocols and study specifications
@@ -89,7 +113,7 @@ EBV-MS_Project/
 
 ---
 
-## 5. Reproducibility & Validation
+## 6. Reproducibility & Validation
 
 ### Automated Package Verification
 The public computational package contains a deterministic integrity checker verifying all required files and SHA-256 checksums:
@@ -112,7 +136,7 @@ To execute candidate screening or inspect frozen result tables:
 
 ---
 
-## 6. Citation
+## 7. Citation
 
 If you use this computational pipeline, candidate scoring framework, or curated datasets, please cite:
 
@@ -129,7 +153,7 @@ Or use the metadata in [`CITATION.cff`](CITATION.cff).
 
 ---
 
-## 7. License
+## 8. License
 
 - **Code & Scripts**: Licensed under the [MIT License](LICENSE).
 - **Manuscript Text, Figures, & Data Tables**: Licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
