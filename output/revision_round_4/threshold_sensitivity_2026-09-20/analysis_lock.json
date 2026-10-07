@@ -1,0 +1,39 @@
+{
+  "analysis": "binding_register_threshold_sensitivity_grid",
+  "status": "complete",
+  "completed_utc": "2026-09-21T00:20:24.347384+00:00",
+  "cutoffs_percent": [
+    1.0,
+    2.0,
+    5.0,
+    10.0,
+    20.0
+  ],
+  "primary_predictors": [
+    "iedb_recommended_binding",
+    "netmhciipan_4_3_el",
+    "mixmhc2pred_2_1_context"
+  ],
+  "binding_rules": [
+    "all_3_both_arms",
+    "at_least_2_of_3_both_arms"
+  ],
+  "register_rules": [
+    "exact_declared_core",
+    "within_1_residue_of_declared_start"
+  ],
+  "candidate_count": 49,
+  "arm_count": 98,
+  "stored_predictor_record_count": 490,
+  "grid_row_count": 980,
+  "claim_boundary": "Sensitivity of a computational binding/register gate only; not evidence of measured affinity, endogenous presentation, TCR recognition, cross-reactivity, molecular mimicry, or an MS mechanism.",
+  "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+  "inputs": {
+    "/Users/anishsharma/Library/Mobile Documents/com~apple~CloudDocs/ebv_ms_publication/processed 2/high_priority_handoff_hunt_2026-09-07/frozen_49_pair_manifest.csv": "9da80e0036398ddd725ae1913f7f080a901ca56f7a0a122e63620736aa122d4d",
+    "/Users/anishsharma/Library/Mobile Documents/com~apple~CloudDocs/ebv_ms_publication/processed 2/high_priority_handoff_hunt_2026-09-07/raw_responses/predictor_records.csv": "8df7caf2fcfc6c30214c4fddd494070d5c99447425eb1b49ce0524bb23015cc3",
+    "/Users/anishsharma/Library/Mobile Documents/com~apple~CloudDocs/ebv_ms_publication/processed 2/high_priority_handoff_hunt_2026-09-07/secondary_provisional_tiers_2026-09-07/all_49_provisional_tiers.csv": "3cf425e1c1701d5d811e251e907a47db2503a91941c223dbf1f0282c7cbad6f5",
+    "/Users/anishsharma/Library/Mobile Documents/com~apple~CloudDocs/ebv_ms_publication/processed 2/high_priority_handoff_hunt_2026-09-07/protocol_lock.json": "fb9f023605519a068528ae554b204a45a8f8102cffd28e6d49c2aefadcc4ea5f",
+    "/Users/anishsharma/Library/Mobile Documents/com~apple~CloudDocs/Downloads/EBV-MS_Molecular_Mimicry_Project/EBV-MS_Project/code/revision_analyses/run_threshold_sensitivity.py": "3390058c1de2ebda399fcaa45906b7692eb526319b562cf9df1e685e8f807e58"
+  }
+}

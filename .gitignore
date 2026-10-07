@@ -77,3 +77,6 @@ secrets.*
 Rplots.pdf
 outputs/**/test.xlsx
 outputs/**/test.xlsx.inspect.ndjson
+
+# Local DOI staging archive (546MB; deposited to Zenodo, not version-controlled)
+doi_release/

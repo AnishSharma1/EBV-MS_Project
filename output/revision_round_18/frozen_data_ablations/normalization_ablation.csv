@@ -1,0 +1,7 @@
+allele,rank_correlation_normalized_vs_raw_sum,top_16_overlap,top_80_overlap
+HLA-DRB1*03:01,0.978789,14,72
+HLA-DRB1*08:01,0.986005,12,74
+HLA-DRB1*13:03,0.987613,14,71
+HLA-DRB1*13:03,lead,"HLA-DRB1*13:03|EBV_IEDB_35bb9c18fac4|SELF_CANON_TALDO1_0108_0122: normalized rank 13, raw-sum rank 8, normalized score 0.28125, raw sum 9",raw mean has the same rank as raw sum
+HLA-DRB1*15:01,0.983993,13,77
+HLA-DRB1*15:01,lead,"HLA-DRB1*15:01|EBV_IEDB_35bb9c18fac4|SELF_CANON_TALDO1_0216_0230: normalized rank 14, raw-sum rank 5, normalized score 0.31429, raw sum 11",raw mean has the same rank as raw sum

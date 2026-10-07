@@ -54,8 +54,8 @@ This project progressed through two distinct methodological phases:
 
 | Candidate ID | Allele | Viral Peptide | Human Self Peptide | Screen Rank | Routing Tier | Evidence & Status |
 |---|---|---|---|---|---|---|
-| **HP47** | `HLA-DRB1*15:01` | BALF5 627–641 (`TGGVYHFVKKHVHES`) | TALDO1 216–230 (`SVTKIYNYYKKFSYK`) | 14 / 1,600 | `strong_medium_provisional` | Multi-metric sequence robustness; high multi-predictor binding; invariant AF3 parent/nested register. Verified viral DR15 binding in IEDB (Assay 1774674). Recommended for direct recombinant binding & register mapping. |
-| **HP36** | `HLA-DRB1*13:03` | BALF5 627–641 (`TGGVYHFVKKHVHES`) | TALDO1 108–122 (`DARLSFDKDAMVARA`) | 13 / 1,600 | `weak_medium_provisional` | Multi-metric sequence robustness; computational binding consensus passed. Direct binding measurement pending. |
+| **HP47** | `HLA-DRB1*15:01` | BALF5 627–641 (`TGGVYHFVKKHVHES`) | TALDO1 216–230 (`SVTKIYNYYKKFSYK`) | 14 / 1,600 | `computational_stratum_A` | Multi-metric sequence robustness; strict three-predictor gate passed only at the 20% cutoff. Verified viral DR15 binding in IEDB (Assay 1774674). Recommended for direct recombinant binding and register mapping. |
+| **HP36** | `HLA-DRB1*13:03` | BALF5 627–641 (`TGGVYHFVKKHVHES`) | TALDO1 108–122 (`DARLSFDKDAMVARA`) | 13 / 1,600 | `computational_stratum_B` | Multi-metric sequence robustness; strict three-predictor gate passed only at the 20% cutoff. Direct binding measurement pending. |
 
 > [!IMPORTANT]
 > **Positive Control Calibration**:  

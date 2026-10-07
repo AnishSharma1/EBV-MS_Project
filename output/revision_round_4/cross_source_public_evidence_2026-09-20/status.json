@@ -1,0 +1,16 @@
+{
+  "absence_policy": "A reviewed no-record result is not evidence of absence and carries no ranking penalty.",
+  "arm_count": 98,
+  "candidate_count": 49,
+  "decision_counts": {
+    "qualifies_public_evidence_gate": 1,
+    "reviewed_no_qualifying_record_no_penalty": 97
+  },
+  "gate_rule": "Only positive exact-sequence/exact-allele MHC/ligand evidence qualifies.",
+  "iedb_iq_api_evaluated_arm_count": 98,
+  "iedb_positive_exact_hla_mhc_arm_count": 1,
+  "literature_recovery_unique_peptide_allele_arm_count": 63,
+  "presentation_policy": "Atlas evidence is recorded as presentation context and cannot substitute for the locked binding gate.",
+  "rank_changes": "none",
+  "status": "complete_iedb_iq_api_retrieval; presentation_review_manifest_created"
+}

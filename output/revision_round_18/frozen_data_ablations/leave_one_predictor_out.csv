@@ -1,0 +1,5 @@
+dropped_output,retained_output_count,strict_20_percent_exact_core_pass_ids,pass_count
+none,3,HP47;HP36,2
+iedb_recommended_binding,2,HP47;HP36,2
+netmhciipan_4_3_el,2,HP47;HP36;HP43;HP21,4
+mixmhc2pred_2_1_context,2,HP47;HP36;HP06;HP17;HP49,5

@@ -1,0 +1,295 @@
+Supplementary material: Computational assessment of EBV-self
+peptide similarities across HLA class II contexts
+Anish Sharma
+September 20, 2026
+1 Supplementary Methods
+1.1 SM1. Frozen-core input and TCR-facing BLOSUM62 score
+The initial 6,400-comparison V3 matrix stores one declared P1–P9 core for each peptide arm. These cores were
+frozen before the score matrix was ranked and were not replaced by the later audit-predictor calls. The initial
+screen is therefore conditional on the declared-core input. The archival V3 manifest must identify the original
+core-calling method, version, settings, and tie rule so that this input can be independently regenerated.
+For two declared nine-residue cores a and b, the TCR-facing normalized BLOSUM62 score was calculated
+at I= {P2, P3, P5, P7, P8} as S(a, b) = ∑i∈I B(ai, bi) / ∑i∈I max{B(ai, ai), B(bi, bi)}. B denotes the pub-
+lished BLOSUM62 substitution value. The numerator sums the five matched residue-pair values; the denominator
+sums the larger of the two residue-specific self-substitution values at each position. Exact identities are handled
+by the same formula, and cores containing nonstandard or ambiguous amino-acid symbols were excluded during
+curation. The score is a relative, register-conditional prioritization quantity, not a probability of presentation,
+recognition, cross-reactivity, or molecular mimicry.
+1.2 SM2. Expanded cohort construction and provisional-tier rules
+1.2.1 Expanded 49-pair cohort selection
+The expanded 49-pair cohort was analyzed separately from the initial eight-pair evidence audit. All final pair
+identifiers matched entries in the original 6,400-comparison V3 matrix. The frozen source pool comprised eight
+Stage-1 evidence-audit candidates, ten previously retained near-miss candidates, and 31 rank-based prefilter can-
+didates from the V3 matrix. Deduplication by allele, declared viral core, and declared self core reduced these
+49 source rows to 47 unique pair definitions. Two deterministic replacements were then selected from the rele-
+vant within-allele V3 rankings to restore the fixed 49-pair cohort; each replacement had pre-existing viral- and
+self-arm binding percentile ranks ≤ 20%. The final cohort contained seven HLA-DRB1*03:01 pairs, 14 HLA-
+DRB1*08:01 pairs, 16 HLA-DRB1*13:03 pairs, and 12 HLA-DRB1*15:01 pairs, corresponding to 98 peptide
+arms. Thus, the expansion increased candidate coverage while retaining the same four alleles represented in the
+initial eight-pair audit.
+1.2.2 Secondary provisional-tier rules
+Secondary provisional strata were assigned after the expanded 49-pair screen as routing labels for subsequent ex-
+perimental binding and register-mapping work. A strict peptide arm required all three binding-predictor percentile
+1
+ranks to be ≤ 20%, agreement of at least two predictors on the same nine-residue core, and agreement between
+that core and the declared core. A near-passing arm required declared-core agreement and at least two of three pre-
+dictor percentile ranks ≤ 20%. Computational stratum A (formerly “strong-medium”) required strict support for
+both arms plus exact-sequence, exact-allele direct-binding evidence for at least one arm. Computational stratum
+B (formerly “weak-medium”) required either strict support for both arms without verified exact-allele binding or
+ligand evidence, or support for both declared registers across two calibrated same-allele PANDORA templates and
+expected/adjacent-register decoys despite one narrow predictor discrepancy. Computational stratum C (formerly
+“strong-low”) required strict support for one arm and near-passing support for the other. Candidates failing these
+conditions were left untiered. No candidate received high-priority status because the automated public-evidence
+endpoint was unavailable under the frozen review protocol. These strata do not establish peptide-HLA affinity,
+natural presentation, T-cell recognition, cross-reactivity, molecular mimicry, or disease relevance.
+1.3 SM3. Statistical calibration and sensitivity analyses
+Statistical methods were implemented to test whether observed TCR-facing BLOSUM62 scores exceeded scores
+expected after disruption of residue-position alignments. Each HLA allele had its own separate simulation with a
+starting universe of 40 EBV cores and 40 self cores, making 1,600 pairwise comparisons. Ten thousand simulation
+replicates were completed independently for each allele at random seed 20260914. These peptides’ positions
+were classified as HLA anchor positions (P1, P4, P6, P9) or designated TCR-facing positions (P2, P3, P5, P7,
+P8). When making the replicates, HLA anchor positions were held in place while TCR-facing residues were
+independently permuted within each 9-mer core and each peptide’s exposed-residue composition was unchanged
+by this within-core permutation. Furthermore, each unique peptide was shuffled once per replicate and was then
+reused across 40 pairings to preserve the Cartesian dependence structure. Then, a recalculation was performed
+with the unchanged normalized BLOSUM62 score function, with higher scores being ranked higher, and five
+prespecified outputs were collected: pair-specific upper-tail Monte Carlo p, Benjamini-Hochberg q across eight
+audited pairs, within-allele maxT family-wise p, the null median, and the 95% null interval. Random re-pairing
+was excluded because the observed 40 × 40 matrix already contained every possible pairing.
+Next, binding-threshold sensitivity of the frozen 49-pair panel was evaluated using the predicted binding per-
+centile ranks generated by the IEDB-recommended binding method, NetMHCIIpan 4.3 EL, and MixMHC2pred
+2.1 context. The specific percentile thresholds evaluated were 1%, 2%, 5%, 10%, and 20%, and the binding
+requirements were all three predictors passing for both peptide arms or at least two of three predictors passing
+for both arms. Alongside the binding rules, two register criteria were evaluated as separate grid conditions: each
+predictor’s predicted core start was required either to be identical to the declared core start or to have an absolute
+start-position difference of ≤ 1 residue. The exact computational identity, version, access date, and independence
+assessment of the IEDB-recommended method must be supplied with the frozen predictor records; it should not
+be interpreted as an independent biological measurement.
+The threshold grid showed that under the locked all-three-predictor, both-arm rule, the two BALF5-TALDO1
+pairs passed only at 20%; neither passed at 10% or below. Under the two-of-three, both-arm rule, the DRB1*15:01
+pair passed at 10%, whereas the DRB1*13:03 pair first passed at 20%. The ±1 register rule added no candidates
+to the strict all-three-predictor condition; it added one nonlead candidate only in the relaxed two-of-three 20%
+condition. Thus, the two-pair strict result is conditional on the 20% threshold.
+Four-metric rank sensitivity was also performed on the four allele-specific cohorts containing 1,600 pairs each.
+Pairs were evaluated using TCR-facing BLOSUM62, full-core BLOSUM62, TCR-facing sequence identity, and
+Grantham distance. Higher similarity was better for BLOSUM62 and identity, while lower Grantham distances
+indicated greater physicochemical similarity. Standard Grantham distance [9] was used as the physicochemical
+metric. The pairwise score was calculated by averaging the published positional distances between matched TCR-
+facing residues at P2, P3, P5, P7, and P8 in the two peptide cores. The control performance of standard Grantham
+distance was tested across eight control panels representing three independent TCR systems, with comparison
+2
+based sequentially on the number of systems with a positive-control rank of ≤ 3, the worst system rank, and
+the system-weighted mean reciprocal rank. Only after Grantham passed this control gate was its use permitted
+in the four-metric rank sensitivity. For a candidate pair to be robust, it needed to be within the top 1% under at
+least three metrics, while partially robust pairs did not meet the robust criterion but were within the top 5% under
+at least three metrics. For tie handling, average ranks were used to calculate pairwise within-allele Spearman
+correlations when ties occurred, and competition ranks were used for primary robustness labels. The top 1% of
+pairs was defined as rank ≤ 16, and the top 5% was defined as rank ≤ 80.
+1.4 SM8. Calibration and exploratory modeling
+The literature-derived Hy.2E11 cross-reactive benchmark, BALF5627-641-MBP85-99, served as a structural-
+comparison reference [11]. The benchmark contains HLA-DRA*01:01-HLA-DRB5*01:01 for BALF5 (PDB:
+1H15) and HLA-DRA*01:01-HLA-DRB1*15:01 for MBP (PDB: 1BX2). It was therefore treated as a DR15
+haplotype-level control, rather than a same-allele comparison; it does not validate either BALF5-TALDO1 pair
+or establish biological mimicry.
+Poisson-Boltzmann/APBS pMHC surface-potential comparison was explored as an exploratory surface-
+resemblance descriptor [12]. Its score was excluded from primary ranking because a 30-result control gate
+yielded 15 failed and 12 missing results. This did not test or refute biological T-cell cross-reactivity. An
+AlphaFold 3 TCR-pMHC calibration against 1YMM and 2WBJ was also assessed with DockQ and CAPRI
+pose-recovery criteria [13, 14]; all ten returned models scored below the DockQ acceptable-quality boundary of
+0.23 and both controls were CAPRI “Incorrect,” so these outputs were excluded from candidate TCR ranking.
+Separately, TCRModel2 generated five-component TCR-pMHC models comprising HLA-alpha, HLA-beta,
+peptide, TCR-alpha, and TCR-beta chains [15]. The calibration references 1YMM, 1ZGL, and 2WBJ each re-
+ceived five ranked models. DockQ and CAPRI classifications were evaluated alongside TCR-placement, pMHC,
+TCR-fold, and whole-complex RMSD. 1ZGL produced five acceptable models (DockQ 0.411-0.479); 1YMM pro-
+duced five incorrect models (0.010-0.140); and 2WBJ produced five incorrect models (0.016-0.038). Only one
+control met the recovery criterion. Candidate outputs were excluded from ranking and cannot support shared-TCR
+or cross-reactivity claims; BALF5 replicate models remain exploratory internal predictions rather than docking
+validation.
+3
+2 Supplementary Figures
+TCR−facing BLOSUM62 similarity
+0.4
+rank 13/1,600 rank 14/1,600
+0.0
+−0.4
+DRB1*03:01
+DRB1*08:01
+DRB1*13:03
+DRB1*15:01
+Figure S1: Within-allele distributions of TCR-facing BLOSUM62 similarity scores. Each point represents
+one EBV-human peptide comparison (n = 1,600 per HLA allele); violin profiles summarize the allele-specific
+score distributions. Labels identify the BALF5-TALDO1 pairs selected for evidence review. Reported ranks are
+calculated within each allele, not across the combined 6,400-pair dataset.
+4
+100
+MixMHC2pred context percentile rank
+20
+5
+DR15 viral
+DR15 self
+1
+DR13 viral
+0.1
+0.01
+BALF5−TALDO1 arms
+Other audit arms
+0.01 0.1 1 5 20 100
+NetMHCIIpan−4.3 EL percentile rank
+Figure S2: Concordance of peptide-HLA class II binding-percentile predictions in the initial eight-pair
+audit. Each point represents one peptide arm. NetMHCIIpan-4.3 EL and MixMHC2pred context percentile
+ranks are plotted on logarithmic axes; lower values indicate stronger predicted binding. Gold dashed lines mark
+the ≤ 5% full-consensus threshold, gray dotted lines mark the ≤ 20% lesser-support threshold, and the shaded
+region identifies arms below 5% in both predictors. Blue points are BALF5-TALDO1 arms; gray points are other
+audited arms.
+3 Supplementary Tables
+Table S1: Top sequence-ranked pairs within each allele.
+Allele Rank 1 Rank 2 Rank 3
+*03:01 EBNA2136-150-MOG97-109 (0.48) BNRF137-51-CLDN11193-207 (0.44) BALF4103-116-CRYAB1-15 (0.41)
+08:01 EBNA187-101-ANO279-93 (0.52) BLLF165-75-PLP1140-152 (0.42) BZLF1198-210-MAG612-626 (0.391)
+13:03 EBNA3B139-153-MOG221-235 (0.49) BNRF137-51-CLDN11193-207 (0.44) BARF11-15-MAG1-15 (0.44)
+15:01 EBNA187-101-ANO279-93 (0.52) EBNA3B139-153-MOG221-235 (0.49) BALF4575-589-CNP1-15 (0.43)
+5
+Table S2: Initial eight-candidate evidence audit.
+Candidate pair
+HLA context
+Binding
+V / S
+Register
+V / S
+IEDB
+arms
+Ligand
+arms
+Audit
+status
+EBNA2-MOG
+HLA-DRB1*03:01 No / Yes Yes / Yes 0 0 Hold
+BARF1-CRYAB
+HLA-DRB1*03:01 No / No No / Yes 0 0 Hold
+EBNA1-ANO2
+HLA-DRB1*08:01 No / No Yes / Yes 0 0 Hold
+EBNA-LP-MOG
+HLA-DRB1*08:01 No / No No / Yes 0 0 Hold
+EBNA3B-MOG
+HLA-DRB1*13:03 No / No No / No 0 0 Hold
+BALF5-TALDO1
+HLA-DRB1*13:03 Yes / No Yes / Yes 0 0
+Medium
+priority
+BALF4-CRYAB
+HLA-DRB1*15:01 Yes / No Yes / Yes 1 1 Hold
+BALF5-TALDO1
+HLA-DRB1*15:01 No / No Yes / Yes 1 0
+Medium
+priority
+Note. V/S, viral/self peptide arm. Binding: both NetMHCIIpan-4.3 EL and MixMHC2pred ranks ≤ 5% for that arm. Register:
+both predictors selected the same declared P1-P9 core. IEDB and ligand entries are numbers of peptide arms with exact-HLA
+supporting records (0-2); they are not numbers of studies or patients. These fields do not establish natural presentation or T-cell
+cross-reactivity.
+Table S3: Secondary provisional computational strata in the 49-pair cohort.
+Target allele Viral-human pair Status Supporting factor Limitation
+DRB1*15:01 BALF5627-641-TALDO1216-230 Stratum A Complete computational consen-
+sus; viral IEDB binding
+DRB1*13:03 BALF5627-641-TALDO1108-122 Stratum B Expanded binding and register cri-
+Register instability; no self-arm elu-
+tion record
+No verified public record
+teria
+DRB1*15:01 EBNA187-101-MBP217-233 Stratum B Declared register retained across
+Binding-predictor discrepancy;
+calibrated PANDORA templates
+lower rank
+DRB1*15:01 BALF4103-116-CRYAB1-15 Stratum C Initial sequence similarity Template discordance and register
+sensitivity
+DRB1*03:01 EBNA2136-150-MOG97-109 Stratum C Initial sequence rank No same-allele PANDORA calibra-
+tion
+DRB1*08:01 BHRF1122-133-ANO2104-118 Stratum C Initial sequence rank No same-allele PANDORA calibra-
+tion
+DRB1*08:01 EBNA187-101-ANO279-93 Stratum C Initial sequence rank No same-allele PANDORA calibra-
+tion
+Various Various Untiered Heterogeneous profiles Incomplete consensus or evidence
+6
+Table S4: Constrained-null simulation results for the eight audited pairs. Ten thousand replicates were completed
+independently for each allele at random seed 20260914. The 95% null interval reports the 2.5th and 97.5th
+percentiles.
+Target Allele Pair
+Observed
+score (rank)
+Null
+median 95% null interval
+Monte Carlo
+p BH q maxT p
+HY03_SEQ_01 DRB1*03:01 EBNA2-MOG 0.48000 (1) -0.18519 [-0.35714, 0.28000] 0.00790 0.06319 0.83572
+HY03_SEQ_02 DRB1*03:01 BARF1-CRYAB 0.27273 (13) -0.17949 [-0.32500, 0.34375] 0.08189 0.08189 1.00000
+HY08_SEQ_01 DRB1*08:01 EBNA1-ANO2 0.52174 (1) 0.00000 [-0.32000, 0.52174] 0.03420 0.07199 0.66483
+HY08_SEQ_02 DRB1*08:01 EBNA-LP-MOG 0.32000 (6) -0.11538 [-0.46154, 0.32000] 0.06539 0.07634 1.00000
+HY13_SEQ_01 DRB1*13:03 EBNA3B-MOG 0.48485 (1) -0.13514 [-0.32432, 0.48485] 0.03600 0.07199 0.82102
+HY13_SEQ_02 DRB1*13:03 BALF5-TALDO1 0.28125 (13) -0.15625 [-0.33333, 0.25806] 0.01720 0.06879 1.00000
+HY15_SEQ_01 DRB1*15:01 BALF4-CRYAB 0.41176 (5) -0.10000 [-0.30233, 0.47059] 0.05559 0.07634 0.98260
+HY15_SEQ_02 DRB1*15:01 BALF5-TALDO1 0.31429 (14) 0.05714 [-0.18919, 0.41176] 0.06679 0.07634 1.00000
+Sequence-score calibration only; not evidence of endogenous presentation, pMHC stability, TCR recognition, cross-reactivity, molec-
+ular mimicry, or an MS mechanism.
+Table S5: Declared P1–P9 cores for the two BALF5-TALDO1 sequence-prioritized comparisons. Bold residues
+are the nominal HLA-facing positions P1, P4, P6, and P9; unbolded residues are the designated TCR-facing
+positions P2, P3, P5, P7, and P8. These are frozen V3 input cores, not experimentally mapped registers.
+Allele Peptide arm Declared core (P1–P9)
+DRB1*13:03 BALF5627-641 YHFVKKHVH
+DRB1*13:03 TALDO1108-122 LSFDKDAMV
+DRB1*15:01 BALF5627-641 VYHFVKKHV
+DRB1*15:01 TALDO1216-230 IYNYYKKFS
+References
+[1] Bjornevik K, Cortese M, Healy BC, et al. Longitudinal analysis reveals high prevalence of Epstein-Barr virus
+associated with multiple sclerosis. Science. 2022;375:296-301. https://doi.org/10.1126/science.
+abj8222
+[2] National Institute of Neurological Disorders and Stroke. Multiple Sclerosis: Hope Through Research.
+https://www.ninds.nih.gov/health-information/disorders/multiple-sclerosis
+[3] Lanz TV, Brewer RC, Ho PP, et al. Clonally expanded B cells in multiple sclerosis bind EBV EBNA1 and
+GlialCAM. Nature. 2022;603:321-327. https://doi.org/10.1038/s41586-022-04432-7
+[4] Vita R, et al. The Immune Epitope Database (IEDB): 2024 update. Nucleic Acids Research. 2025;53:D436-
+D443. https://doi.org/10.1093/nar/gkae1092
+[5] The UniProt Consortium. UniProt: the Universal Protein Knowledgebase in 2025. Nucleic Acids Research.
+2025;53:D609-D617. https://doi.org/10.1093/nar/gkae1010
+[6] Nilsson JB, Kaabinejadian S, Yari H, et al. Accurate prediction of HLA class II antigen presentation across
+all loci using tailored data acquisition and refined machine learning. Science Advances. 2023;9:adj6367.
+https://doi.org/10.1126/sciadv.adj6367
+7
+[7] Racle J, Michaux J, Rockinger GA, et al. Robust prediction of HLA class II epitopes by deep motif deconvo-
+lution of immunopeptidomes. Nature Biotechnology. 2019;37:1283-1286. https://doi.org/10.1038/
+s41587-019-0289-6
+[8] Henikoff S, Henikoff JG. Amino acid substitution matrices from protein blocks. PNAS. 1992;89:10915-
+10919. https://doi.org/10.1073/pnas.89.22.10915
+[9] Grantham R. Amino acid difference formula to help explain protein evolution. Science. 1974;185:862-864.
+https://doi.org/10.1126/science.185.4154.862
+[10] Abramson J, Adler J, Dunger J, et al. Accurate structure prediction of biomolecular interactions with Al-
+phaFold 3. Nature. 2024;630:493-500. https://doi.org/10.1038/s41586-024-07487-w
+[11] Lang HLE, Jacobsen H, Ikemizu S, et al. A functional and structural basis for TCR cross-reactivity in mul-
+tiple sclerosis. Nature Immunology. 2002;3:940-943. https://doi.org/10.1038/ni835
+[12] Jurrus E, Engel D, Star K, et al. Improvements to the APBS biomolecular solvation software suite. Protein
+Science. 2018;27:112-128. https://doi.org/10.1002/pro.3280
+[13] Basu S, Wallner B. DockQ: A quality measure for protein-protein docking models. PLOS ONE.
+2016;11:e0161879. https://doi.org/10.1371/journal.pone.0161879
+[14] Collins KW, Copeland MM, Brysbaert G, et al. CAPRI-Q: The CAPRI resource evaluating the quality of
+predicted structures of protein complexes. Journal of Molecular Biology. 2024;436:168540. https://doi.
+org/10.1016/j.jmb.2024.168540
+[15] Yin R, Ribeiro-Filho HV, Lin V, et al. TCRmodel2: high-resolution modeling of T cell receptor recognition
+using deep learning. Nucleic Acids Research. 2023;51:W569-W576. https://doi.org/10.1093/nar/
+gkad356
+[16] Perez-Riverol Y, et al. The PRIDE database at 20 years: 2025 update. Nucleic Acids Research.
+2025;53:D543-D551. https://doi.org/10.1093/nar/gkae1011
+[17] Parizi FM, Marzella DF, Ramakrishnan G, et al. PANDORA v2.0: Benchmarking peptide-MHC II models
+and software improvements. Frontiers in Immunology. 2023;14:1285899. https://doi.org/10.3389/
+fimmu.2023.1285899
+[18] Sali A, Blundell TL. Comparative protein modelling by satisfaction of spatial restraints. Journal of Molec-
+ular Biology. 1993;234:779-815. https://doi.org/10.1006/jmbi.1993.1626
+[19] Thomas OG, Rykaczewska U, Galešić M, et al. Anoctamin-2-specific T cells link Epstein-Barr virus to
+multiple sclerosis. Cell. 2026;189:585-602.e38. https://doi.org/10.1016/j.cell.2025.12.032
+[20] Hansen BE, Rasmussen AH, Jakobsen BK, Ryder LP, Svejgaard A. Extraordinary cross-reactivity of an
+autoimmune T-cell receptor recognizing specific peptides both on autologous and on allogeneic HLA class II
+molecules. Tissue Antigens. 2007;70:42-52. https://doi.org/10.1111/j.1399-0039.2007.00849.x
+[21] Brown JH, Jardetzky TS, Gorga JC, et al. Three-dimensional structure of the human class II histocompati-
+bility antigen HLA-DR1. Nature. 1993;364:33-39. https://doi.org/10.1038/364033a0
+[22] Sewell AK. Why must T cells be cross-reactive? Nature Reviews Immunology. 2012;12:669-677. https:
+//doi.org/10.1038/nri3279
+[23] Denzin LK, Cresswell P. HLA-DM induces CLIP dissociation from MHC class II alpha beta dimers and fa-
+cilitates peptide loading. Cell. 1995;82:155-165. https://doi.org/10.1016/0092-8674(95)90061-6
+8

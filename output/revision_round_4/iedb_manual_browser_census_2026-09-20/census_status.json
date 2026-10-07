@@ -1,0 +1,16 @@
+{
+  "absence_policy": "No exact-sequence record is recorded as no public record, not as negative evidence or a ranking penalty.",
+  "arm_count": 98,
+  "candidate_count": 49,
+  "classification_counts": {
+    "exact_sequence_exact_hla_positive_mhc_ligand": 1,
+    "exact_sequence_exact_hla_positive_tcell_only": 5,
+    "exact_sequence_no_positive_exact_hla_mhc_ligand": 59,
+    "no_exact_sequence_public_record": 33
+  },
+  "qualifying_mhc_ligand_arm_count": 1,
+  "rule": "Positive exact-sequence/exact-allele MHC/ligand evidence qualifies; T-cell-only evidence is retained but does not qualify.",
+  "source": "Manual exact-peptide queries in the IEDB public browser interface; no Query API call was used.",
+  "status": "complete_manual_public_browser_census",
+  "unique_exact_peptide_searches": 35
+}

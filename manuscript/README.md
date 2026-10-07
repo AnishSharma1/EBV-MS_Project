@@ -2,7 +2,7 @@
 
 This directory contains the submission-ready manuscript, supplement, LaTeX sources, display items, and audit records for the study:
 
-**"Computational assessment of EBV-self peptide similarities across HLA class II contexts"**  
+**"Register-aware computational prioritization of EBV--self peptide pairs across HLA class II contexts"**
 Author: Anish Sharma (Liberal Arts and Science Academy, Austin, TX)  
 Target Journal: *BMC Bioinformatics*  
 Public Code/Data: [https://github.com/AnishSharma1/EBV-MS_Project](https://github.com/AnishSharma1/EBV-MS_Project)
@@ -13,10 +13,8 @@ Public Code/Data: [https://github.com/AnishSharma1/EBV-MS_Project](https://githu
 
 | File | Description | Status |
 |---|---|---|
-| [`paper_v9_working_main.pdf`](paper_v9_working_main.pdf) | Compiled main manuscript PDF | Submission ready |
-| [`paper_v9_working_supplement.pdf`](paper_v9_working_supplement.pdf) | Compiled independent supplementary material PDF | Submission ready |
-| [`main.tex`](main.tex) | Main manuscript LaTeX source | V9 Working |
-| [`supplement.tex`](supplement.tex) | Independent supplement LaTeX source | V9 Working |
+| [`main.tex`](main.tex) | Main manuscript LaTeX source | V18 reviewer-response revision |
+| [`supplement.tex`](supplement.tex) | Independent supplement LaTeX source | V18 reviewer-response revision |
 | [`references.tex`](references.tex) | Shared bibliography file | Audited |
 | [`BMC_SUBMISSION_FIELDS.md`](BMC_SUBMISSION_FIELDS.md) | Formatted journal submission fields | Complete |
 
@@ -32,9 +30,9 @@ Public Code/Data: [https://github.com/AnishSharma1/EBV-MS_Project](https://githu
 - **Supplementary Figures** (`supplement_figures/`):
   - `figureS1.pdf`: 6,400-pair within-allele score distributions
   - `figureS2.pdf`: Initial eight-arm binding-predictor concordance
-  - `figureS3.pdf`: Binding-threshold sensitivity across percentile cutoffs
+  - `figureS3.pdf`: Binding-threshold sensitivity across percentile cutoffs (to be regenerated and added before submission)
 - **Supplementary Tables** (`supplement_tables/`):
-  - Tables S1–S12 providing complete tabular documentation (candidate provence, 49-pair cohort, ablation grids, register scenarios, matched decoys, and benchmark status).
+  - Tables S1–S7 providing the cited candidate audits, routing classes, null results, lead-output records, frozen-core sensitivity audit, and declared cores.
 
 ---
 
