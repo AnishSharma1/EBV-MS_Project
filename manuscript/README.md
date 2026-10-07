@@ -13,8 +13,8 @@ Public Code/Data: [https://github.com/AnishSharma1/EBV-MS_Project](https://githu
 
 | File | Description | Status |
 |---|---|---|
-| [`main.tex`](main.tex) | Main manuscript LaTeX source | V18 reviewer-response revision |
-| [`supplement.tex`](supplement.tex) | Independent supplement LaTeX source | V18 reviewer-response revision |
+| [`main.tex`](main.tex) | Main manuscript LaTeX source | V19 reviewer-response revision |
+| [`supplement.tex`](supplement.tex) | Independent supplement LaTeX source | V19 reviewer-response revision |
 | [`references.tex`](references.tex) | Shared bibliography file | Audited |
 | [`BMC_SUBMISSION_FIELDS.md`](BMC_SUBMISSION_FIELDS.md) | Formatted journal submission fields | Complete |
 
@@ -30,7 +30,9 @@ Public Code/Data: [https://github.com/AnishSharma1/EBV-MS_Project](https://githu
 - **Supplementary Figures** (`supplement_figures/`):
   - `figureS1.pdf`: 6,400-pair within-allele score distributions
   - `figureS2.pdf`: Initial eight-arm binding-predictor concordance
-  - `figureS3.pdf`: Binding-threshold sensitivity across percentile cutoffs (to be regenerated and added before submission)
+  - No figure S3 is present or referenced. `supplement.tex` includes S1 and S2 only. The underlying
+    binding-threshold grid is in `output/revision_round_4/threshold_sensitivity_2026-09-20/`; a figure
+    can be regenerated from it via `code/revision_analyses/run_computational_tightening.py` if added.
 - **Supplementary Tables** (`supplement_tables/`):
   - Tables S1–S7 providing the cited candidate audits, routing classes, null results, lead-output records, frozen-core sensitivity audit, and declared cores.
 
