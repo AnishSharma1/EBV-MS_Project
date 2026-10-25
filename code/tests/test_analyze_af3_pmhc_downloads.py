@@ -7,7 +7,7 @@ import unittest
 from pathlib import Path
 
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "code" / "pipeline"))
 
 from analyze_af3_pmhc_downloads import analyze_complete_job, request_details, study_candidate_id, summarize_cohorts, background_descriptive_rows  # noqa: E402
 

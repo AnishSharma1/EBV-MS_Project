@@ -1,6 +1,6 @@
 from pathlib import Path
 import sys
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "code" / "pipeline"))
 from high_priority_handoff_hunt import EXPECTED_COUNTS, frozen_universe, pair_key, predictor_summary
 
 def test_frozen_universe_has_exact_predeclared_counts():

@@ -5,7 +5,7 @@ import unittest
 from pathlib import Path
 
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "code" / "pipeline"))
 
 from register_aware_benchmark import (  # noqa: E402
     is_assessable_same_register_pair,

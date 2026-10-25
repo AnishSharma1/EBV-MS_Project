@@ -6,7 +6,7 @@ import sys
 import numpy as np
 
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "code" / "pipeline"))
 
 from hla2_positive_control_benchmark import (  # noqa: E402
     PmhcGeometry,

@@ -5,6 +5,10 @@ import tempfile
 import unittest
 
 
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "code" / "pipeline"))
+
 from high_yield_register_resolution import (
     build_experimental_peptide_panel,
     build_register_resolution_gate,

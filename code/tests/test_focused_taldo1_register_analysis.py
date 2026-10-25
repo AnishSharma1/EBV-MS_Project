@@ -4,7 +4,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "src"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "code" / "pipeline"))
 
 from focused_taldo1_register_analysis import classify_register_evidence, enumerate_pair_windows
 

@@ -1,5 +1,10 @@
 import unittest
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "code" / "pipeline"))
+
 from premeeting_rigor import (
     binding_rank_bin,
     eligible_decoys,

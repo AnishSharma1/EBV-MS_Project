@@ -4,6 +4,11 @@ import unittest
 import numpy as np
 
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "code" / "pipeline"))
+
 from build_literature_grounded_hla2_rankings_v3 import (
     SurfaceModel,
     allowed_register_starts,

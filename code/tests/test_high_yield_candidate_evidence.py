@@ -5,6 +5,10 @@ import tempfile
 import unittest
 
 
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "code" / "pipeline"))
+
 from high_yield_candidate_evidence import (
     build_stage2_gate,
     classify_assay_evidence,

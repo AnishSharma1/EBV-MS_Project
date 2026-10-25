@@ -4,6 +4,11 @@ import unittest
 
 import numpy as np
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "code" / "pipeline"))
+
 from tcell_library_v2 import (
     ALLELES,
     CALIBRATION_SEEDS,

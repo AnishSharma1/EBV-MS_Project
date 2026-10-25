@@ -5,7 +5,7 @@ import unittest
 from pathlib import Path
 
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "code" / "pipeline"))
 
 from same_register_af3_analysis import (  # noqa: E402
     direct_register_sequence_metrics,

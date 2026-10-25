@@ -4,6 +4,10 @@ from pathlib import Path
 
 import numpy as np
 
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "code" / "pipeline"))
+
 from pmhc_surface_electrostatics import OpenDXGrid
 from pmhc_surface_electrostatics_v2 import (
     align_local_groove,

@@ -5,7 +5,7 @@ from pathlib import Path
 import sys
 
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "code" / "pipeline"))
 
 from run_hla2_positive_control_results_analysis import (  # noqa: E402
     PACKAGE,

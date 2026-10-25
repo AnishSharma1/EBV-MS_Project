@@ -5,8 +5,8 @@ import unittest
 from pathlib import Path
 
 
-WORKSPACE = Path(__file__).resolve().parents[1]
-VALIDATOR = WORKSPACE / "validate_multiallele_af3_package.py"
+WORKSPACE = Path(__file__).resolve().parents[2]
+VALIDATOR = WORKSPACE / "code" / "batch_builders" / "validate_multiallele_af3_package.py"
 
 
 class MultiAlleleValidatorPathTests(unittest.TestCase):

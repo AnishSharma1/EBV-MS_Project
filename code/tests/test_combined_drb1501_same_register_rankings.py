@@ -1,6 +1,11 @@
 import unittest
 
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "code" / "pipeline"))
+
 from build_combined_drb1501_same_register_rankings import (
     audit_legacy_eligibility,
     combine_and_rank,

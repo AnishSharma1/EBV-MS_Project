@@ -1,0 +1,25 @@
+# Python dependencies for the EBV-MS analysis code and test suite.
+#
+# Verified on 2026-10-24 against CPython 3.14.7 (macOS, arm64): with these
+# versions installed, 48 of the 51 files in code/tests/ pass. The three that do
+# not are blocked on external data, not on packages -- see code/tests/README.md.
+#
+#     python3 -m venv .venv
+#     .venv/bin/python -m pip install -r requirements.txt
+#     .venv/bin/python code/tests/run_suite.py
+#
+# Versions are pinned exactly because this repository accompanies a manuscript:
+# a reader reproducing a number should get the library versions the numbers were
+# checked against. Relax the pins only with a recorded reason.
+
+numpy==2.5.4
+pandas==3.1.0
+scipy==1.18.1
+matplotlib==3.11.2
+scikit-learn==1.9.1
+biopython==1.88
+requests==2.34.2
+
+# Test runner. The suite also runs without it: every file in code/tests/ is an
+# executable unittest module, and run_suite.py uses only the standard library.
+pytest==9.1.1

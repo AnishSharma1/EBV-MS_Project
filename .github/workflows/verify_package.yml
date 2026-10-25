@@ -15,8 +15,25 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          # Matches the interpreter the pins in requirements.txt were verified on.
+          python-version: "3.14"
 
-      - name: Verify Package Integrity and Checksums
-        run: |
-          python3 computational_package/scripts/verify_package.py
+      # The three gates below need no third-party packages, so they run before
+      # the install step and still report if the install fails.
+      - name: Verify package integrity and checksums
+        run: python3 computational_package/scripts/verify_package.py
+
+      - name: Repository integrity
+        run: python3 code/tests/test_repository_integrity.py
+
+      - name: Peptide coordinate integrity
+        run: python3 code/tests/test_peptide_coordinate_integrity.py
+
+      - name: Install dependencies
+        run: python3 -m pip install -r requirements.txt
+
+      # The external processed/ tier is not available to CI, so the nine tests
+      # that read it are skipped here and the run reports 39 passed, 0 failed,
+      # 12 skipped. The runner exits non-zero only on a real failure.
+      - name: Test suite
+        run: python3 code/tests/run_suite.py --no-link

@@ -405,8 +405,8 @@ def build_pilot_package(out: Path = DEFAULT_OUT) -> dict[str, Any]:
             "python": platform.python_version(),
             "numpy": np.__version__,
             "alphafold_server_json_schema": "dialect_alphafoldserver_version_1",
-            "geometry_module_sha256": sha256_file(ROOT / "src/hla2_positive_control_benchmark.py"),
-            "v2_contract_module_sha256": sha256_file(ROOT / "src/hla2_positive_control_benchmark_v2.py"),
+            "geometry_module_sha256": sha256_file(ROOT / "pipeline/hla2_positive_control_benchmark.py"),
+            "v2_contract_module_sha256": sha256_file(ROOT / "pipeline/hla2_positive_control_benchmark_v2.py"),
         },
     )
 

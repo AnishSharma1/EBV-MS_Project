@@ -6,6 +6,10 @@ import unittest
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "code" / "pipeline"))
+
 from lead_focused_robustness import (
     build_audit_tables,
     build_identity_manifest,

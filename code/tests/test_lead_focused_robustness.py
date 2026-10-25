@@ -1,5 +1,10 @@
 import unittest
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "code" / "pipeline"))
+
 from lead_focused_robustness import (
     cluster_complete_linkage,
     classify_separation,

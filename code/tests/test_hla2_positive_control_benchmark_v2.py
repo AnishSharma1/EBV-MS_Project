@@ -6,6 +6,10 @@ import tempfile
 from pathlib import Path
 
 
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "code" / "pipeline"))
+
 from hla2_positive_control_benchmark_v2 import (
     PILOT_SEEDS,
     aggregate_system_results,

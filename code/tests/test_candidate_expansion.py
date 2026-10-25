@@ -5,6 +5,10 @@ import tempfile
 import unittest
 
 
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "code" / "pipeline"))
+
 from candidate_expansion import (
     resolve_natural_context,
     select_diverse_candidates,

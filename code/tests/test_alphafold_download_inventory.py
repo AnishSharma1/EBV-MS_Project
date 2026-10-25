@@ -6,7 +6,7 @@ import unittest
 from pathlib import Path
 
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "code" / "pipeline"))
 
 from build_alphafold_download_inventory import inventory_expected_seed_jobs  # noqa: E402
 

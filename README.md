@@ -1,4 +1,4 @@
-# Computational Assessment of EBV–Self Peptide Similarities Across HLA Class II Contexts
+# Register-Aware Computation Prioritizes EBV–Self Peptide Pairs for Experimental Testing Across HLA Class II Contexts
 
 [![Verify Computational Package](https://github.com/AnishSharma1/EBV-MS_Project/actions/workflows/verify_package.yml/badge.svg)](https://github.com/AnishSharma1/EBV-MS_Project/actions/workflows/verify_package.yml)
 [![License: MIT and CC BY 4.0](https://img.shields.io/badge/License-MIT%20%26%20CC--BY--4.0-blue.svg)](LICENSE)
@@ -16,13 +16,16 @@
 
 Epstein–Barr virus (EBV) infection and the HLA class II risk haplotype (predominantly `HLA-DRB1*15:01`) are convergent risk factors in Multiple Sclerosis (MS) pathogenesis. Molecular mimicry between viral and myelin or central nervous system (CNS) self-peptides has long been proposed as a candidate trigger, but computational mimicry screens are often confounded by arbitrary scoring thresholds, register misassignment, or uncalibrated docking predictions.
 
-This study implements an auditable, control-calibrated computational prioritization workflow evaluating candidate molecular mimicry across four primary HLA class II risk contexts:
+This study implements an auditable computational prioritization workflow, with explicit control gates, that evaluates candidate EBV–self peptide similarity across four HLA class II contexts:
 - `HLA-DRB1*15:01`
 - `HLA-DRB1*13:03`
 - `HLA-DRB1*08:01`
 - `HLA-DRB1*03:01`
 
-We perform a systematic within-allele discovery screen of **6,400 allele-specific pairs** (40 EBV and 40 human CNS peptides per allele), prioritizing candidates by normalized BLOSUM62 similarity at T-cell receptor (TCR)-facing positions (P2, P3, P5, P7, P8). Top candidates are evaluated through multi-metric sequence sensitivity, 10,000-replicate constrained-null simulations, matched empirical decoys, proteome-wide sequence rarity filters (11.25 million 9-mers), multi-predictor binding consensus (NetMHCIIpan 4.3 and MixMHC2pred 2.1), and AlphaFold 3 structural ensemble stability across parent and nested peptide registers.
+We perform a within-allele screen of **6,400 allele-specific pairs** (40 EBV and 40 human self peptides per allele), ranking candidates by normalized BLOSUM62 similarity at the nominally T-cell receptor (TCR)-facing positions (P2, P3, P5, P7, P8) of declared binding cores. Top candidates are examined with four-metric rank sensitivity, a 10,000-replicate constrained-null simulation per allele, predicted-binding threshold sensitivity (NetMHCIIpan 4.3 EL, MixMHC2pred 2.1, and the IEDB-recommended method), AlphaFold 3 parent-versus-nested peptide sensitivity checks, and a PANDORA/MODELLER register stress test.
+
+> [!NOTE]
+> The reported analysis did **not** include proteome-wide background sampling or biologically matched HLA-presentable decoys; the manuscript lists both as limitations. Scripts for a proteome-wide null exist under `code/revision_analyses/` (`run_proteome_sequence_null.py`, `run_proteome_binding_filter.py`), but their outputs are not part of this checkout and are not reported in the current manuscript.
 
 ---
 
@@ -39,14 +42,14 @@ This project progressed through two distinct methodological phases:
   3. The classic Hy.2E11 BALF5–MBP positive-control system was clarified to be an allele-switching system (`BALF5` presented by `DRB5*01:01` [DR2a]; `MBP` presented by `DRB1*15:01` [DR2b]) rather than a single-allele DR15 mimicry event.
 
 ### Leg 2: Current Publication Architecture (Rebuilt & Calibrated)
-- **Focus**: The definitive, reproducible computational pipeline supporting the submitted manuscript.
+- **Focus**: The frozen computational package supporting the manuscript. It supports replay from frozen intermediate outputs, not one-command regeneration (see [`computational_package/docs/SCOPE_AND_LIMITS.md`](computational_package/docs/SCOPE_AND_LIMITS.md)).
 - **Artifacts**: Implemented in [`computational_package/`](computational_package/) and [`manuscript/`](manuscript/).
 - **Upgrades**:
   1. Expansion to a four-allele class II universe with strict within-allele ranking (6,400 pairs).
-  2. Score normalization restricted strictly to solvent-exposed, TCR-facing registers (P2, P3, P5, P7, P8).
-  3. Multi-predictor binding consensus (NetMHCIIpan 4.3 + MixMHC2pred 2.1) and proteome-wide null background screens (11.25M 9-mers).
-  4. AlphaFold 3 parent-versus-nested structural ensemble sensitivity verifying core register invariance.
-  5. Negative control gates: APBS electrostatics and uncalibrated TCRModel2 docking were benchmarked, failed validation gates, and were strictly excluded from candidate scoring.
+  2. Score normalization restricted to the nominally TCR-facing positions (P2, P3, P5, P7, P8) of declared cores. The score is register-conditional: alternate nine-mer windows give wide score ranges for both routed pairs.
+  3. Predicted-binding threshold sensitivity (NetMHCIIpan 4.3 EL, MixMHC2pred 2.1, IEDB-recommended method). The three outputs are correlated inputs used for experimental routing, not independent measurements.
+  4. AlphaFold 3 parent-versus-nested peptide sensitivity analysis. It is descriptive and does not confirm binding registers; the modeled geometry of the DRB1*13:03 TALDO1 arm remains unresolved.
+  5. Negative control gates: APBS electrostatics (15 of 30 required control outputs failed, 12 missing) and uncalibrated TCRModel2 docking were benchmarked, failed validation gates, and were excluded from candidate scoring.
 
 ---
 
@@ -54,8 +57,10 @@ This project progressed through two distinct methodological phases:
 
 | Candidate ID | Allele | Viral Peptide | Human Self Peptide | Screen Rank | Routing Tier | Evidence & Status |
 |---|---|---|---|---|---|---|
-| **HP47** | `HLA-DRB1*15:01` | BALF5 627–641 (`TGGVYHFVKKHVHES`) | TALDO1 216–230 (`SVTKIYNYYKKFSYK`) | 14 / 1,600 | `computational_stratum_A` | Multi-metric sequence robustness; strict three-predictor gate passed only at the 20% cutoff. Verified viral DR15 binding in IEDB (Assay 1774674). Recommended for direct recombinant binding and register mapping. |
-| **HP36** | `HLA-DRB1*13:03` | BALF5 627–641 (`TGGVYHFVKKHVHES`) | TALDO1 108–122 (`DARLSFDKDAMVARA`) | 13 / 1,600 | `computational_stratum_B` | Multi-metric sequence robustness; strict three-predictor gate passed only at the 20% cutoff. Direct binding measurement pending. |
+| **HP47** | `HLA-DRB1*15:01` | BALF5 627–641 (`TGGVYHFVKKHVHES`) | TALDO1 216–230 (`SVTKIYNYYKKFSYK`) | 14 / 1,600 | Experimental-routing class 1 | All three selected outputs met the permissive 20% routing rule (not stricter thresholds). Positive qualitative IEDB purified-MHC binding record for the viral arm (Assay 1774674; Hansen et al. 2007); no self-arm elution record. Routed first for experimental binding and register mapping. |
+| **HP36** | `HLA-DRB1*13:03` | BALF5 627–641 (`TGGVYHFVKKHVHES`) | TALDO1 108–122 (`DARLSFDKDAMVARA`) | 13 / 1,600 | Experimental-routing class 2 | All three selected outputs met the permissive 20% routing rule only. No verified allele-specific public binding record; modeled geometry unresolved. Direct binding measurement pending. |
+
+Routing classes are administrative labels for organizing experimental work, not biological-confidence grades (see `manuscript/supplement.tex`, SM2). The cited rank is the frozen-core, within-allele rank; the manuscript reports both pairs as non-significant after multiple-testing adjustment (maxT *p* = 1.0).
 
 > [!IMPORTANT]
 > **Positive Control Calibration**:  
@@ -76,55 +81,44 @@ To prevent over-interpretation of computational findings, this study enforces ex
 
 ---
 
-## 5. Standardized 5-Directory Repository Architecture
+## 5. Repository Layout
 
 ```
 EBV-MS_Project/
-├── plans/                            # Study designs, protocols & statistical specifications
-│   ├── study_scope.md                # Research question & presentation boundaries
-│   ├── statistical_plan.md           # Discovery screen & constrained-null design
-│   ├── publication_strategy.md       # Target journal & thesis outline
-│   └── README.md                     # Directory guide
+├── computational_package/            # Canonical frozen package (inputs, results, scripts)
+│   ├── MANIFEST.sha256               # Checksum manifest (checked by verify_package.py)
+│   ├── scripts/                      # Package scripts, incl. verify_package.py
+│   ├── data/                         # Curated input libraries and reference sequences
+│   ├── results/                      # Frozen score tables and decision gates
+│   └── docs/                         # Scope, limits, and artifact policy
 │
-├── code/                             # Analysis code, test suites & staging tools
-│   ├── pipeline/                     # Modular analysis scripts
-│   ├── tests/                        # Repository integrity tests
-│   ├── staging/                      # Staging & packaging utilities
-│   └── README.md                     # Execution guide
+├── manuscript/                       # LaTeX sources, version snapshots, audit records
+│   ├── main.tex, supplement.tex      # Current sources (V20; see manuscript/V20_CHANGES.md)
+│   ├── references.tex                # Shared bibliography
+│   ├── figures/                      # figure1-6.pdf; main.tex includes figure1, figure4, figure5
+│   └── paper_v11 ... paper_v20 *     # Per-version PDF and text snapshots
 │
-├── outputs/                          # Derived tables, candidate rankings & benchmark manifests
-│   ├── ebv_ms_benchmark_manifest/    # Benchmark reference manifests
-│   ├── ebv_ms_model_package/         # Processed model metric outputs
-│   └── README.md                     # Output catalog & evidence ledger
+├── code/                             # See code/README.md for the file inventory
+│   ├── pipeline/                     # Analysis scripts (102 Python, 6 R)
+│   ├── revision_analyses/            # Revision-round analyses (21 Python)
+│   ├── batch_builders/               # AlphaFold 3 batch generators
+│   ├── figures/                      # Figure-rendering scripts
+│   ├── tests/                        # 51 test modules
+│   ├── staging/                      # Release packaging
+│   └── archive/                      # Early exploratory scripts
 │
-├── figures/                          # Publication figures & visual assets
-│   ├── manuscript/                   # Figures 1–4 (vector PDF & SVG)
-│   ├── supplement/                   # Supplementary figures S1–S3
-│   └── README.md                     # Figure captions & computational sources
-│
-├── logs/                             # Verification logs, audit trails & QA reports
-│   ├── provenance_audits/            # Sentence-level text provenance logs
-│   ├── citation_audits/              # Reference verification audits
-│   ├── quality_assurance/            # Language & formatting review logs
-│   ├── package_verification/         # Cryptographic SHA-256 manifests
-│   └── README.md                     # Audit index
-│
-├── manuscript/                       # Submission-ready publication deliverables
-│   ├── paper_v9_working_main.pdf     # Main manuscript PDF
-│   ├── paper_v9_working_supplement.pdf # Independent supplement PDF
-│   ├── main.tex & supplement.tex     # Complete LaTeX sources
-│   └── BMC_SUBMISSION_FIELDS.md      # Journal submission metadata
-│
-├── computational_package/            # Canonical reproducible package (Leg 2)
-│   ├── MANIFEST.sha256               # Checksum manifest
-│   ├── scripts/                      # Verified pipeline scripts
-│   ├── data/                         # Curated input libraries
-│   └── results/                      # Frozen score tables & decision gates
-│
-└── notebooks/                        # Exploratory phase Jupyter notebooks (Leg 1)
-    ├── README.md                     # Leg 1 context & provenance notes
-    └── *.ipynb                       # Phase 1 interactive notebooks
+├── output/                           # revision_round_4/, revision_round_18/, revision_v11/ (results the V19/V20 text depends on)
+├── outputs/                          # ebv_ms_benchmark_manifest/, ebv_ms_model_package/ (no README)
+├── figures/                          # manuscript/ (figure1-6), supplement/ (figureS1-S2); see figures/README.md
+├── plans/                            # Study designs, protocols, statistical specifications
+├── logs/                             # Provenance, citation, QA, and package-verification records
+├── doi_release/                      # Staged v1.1.0 archive (built around V18; not the current V20 text)
+├── notebooks/                        # Exploratory-phase notebooks (Leg 1)
+└── archive/, work/                   # Historical and working material; inspect provenance before reuse
 ```
+
+> [!NOTE]
+> Many scripts and analysis-lock files contain absolute paths from the original author workstation, and some inputs (for example the AlphaFold 3 parent-versus-nested table behind the manuscript's Figure 3) live in the separate `ebv_ms_publication/` workspace. The package supports checking frozen outputs; it does not regenerate every figure from this checkout alone.
 
 ---
 
@@ -142,12 +136,35 @@ Expected output:
 PACKAGE VALIDATION PASSED
 ```
 
-### Reproducing the Screen
-To execute candidate screening or inspect frozen result tables:
+### Test Suite
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+.venv/bin/python code/tests/run_suite.py
+```
+
+51 test modules. Verified 2026-10-24 on CPython 3.14.7: **48 passed, 0 failed, 3 skipped** with the external `processed/` tier reachable, or 39 passed with 12 skipped from this repository alone. Skips are printed individually with their reason. `code/tests/README.md` records what each gate covers and which modules are blocked.
+
+Two of these are the gates named in `CLAUDE.md`; all three run in CI alongside package verification:
+
+```bash
+python3 code/tests/test_repository_integrity.py             # 9 checks
+python3 code/tests/test_peptide_coordinate_integrity.py     # 8 checks
+```
+
+### External `processed/` data tier
+51 scripts under `code/`, nine tests, and every figure script read an intermediate tier that is **not in this repository**: `ebv_ms_publication/processed/` (8.0 GB, 57 directories), sitting beside this checkout. It is **not version-controlled and has no checksum manifest**, so nothing read from it is covered by `MANIFEST.sha256`. Manuscript results were computed from the frozen inputs in `computational_package/`; the tier matters for re-running scripts, not for auditing reported numbers.
+
+`code/tests/run_suite.py` finds the tier and links it to `code/processed`, the path the scripts expect (gitignored; override with `EBV_MS_PROCESSED_ROOT`). Two copies of `ebv_ms_publication` exist on the authoring machine and have diverged in at least one file, so the tier's provenance is not yet established — see `CODEBASE_AUDIT_2026-10-24.md`.
+
+### Inspecting the Screen
+The package supports inspecting frozen result tables and replaying from frozen intermediate outputs. It does not promise one-command regeneration of every result. Relevant entry points:
 - **Sequence similarity & screening:** `computational_package/scripts/rank_full_pmhc_screen.py`
 - **Multi-metric robustness:** `computational_package/scripts/biochemical_similarity.py`
 - **Predictor consensus:** `computational_package/scripts/add_mixmhc2pred_validation.py`
 - **Results summaries:** `computational_package/results/stage1_evidence_review_2026-09-03/`
+
+Inspect a script's arguments, inputs, and output paths before running it; several reference locations outside this checkout.
 
 ---
 
@@ -156,15 +173,15 @@ To execute candidate screening or inspect frozen result tables:
 If you use this computational pipeline, candidate scoring framework, or curated datasets, please cite:
 
 ```bibtex
-@article{sharma2026ebvms,
+@misc{sharma2026ebvms,
   author = {Sharma, Anish},
-  title = {Computational assessment of EBV-self peptide similarities across HLA class II contexts},
-  journal = {BMC Bioinformatics},
+  title = {Register-aware computation prioritizes {EBV}--self peptide pairs for experimental testing across {HLA} class {II} contexts},
   year = {2026},
-  note = {In submission. Code available at https://github.com/AnishSharma1/EBV-MS_Project}
+  howpublished = {Manuscript and computational package},
+  url = {https://github.com/AnishSharma1/EBV-MS_Project}
 }
 ```
-Or use the metadata in [`CITATION.cff`](CITATION.cff).
+[`CITATION.cff`](CITATION.cff) describes the archived release v1.1.0 (built around the V18 manuscript, under its V18 title), not the current V20 text.
 
 ---
 

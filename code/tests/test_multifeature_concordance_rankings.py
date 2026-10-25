@@ -1,6 +1,11 @@
 import unittest
 
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "code" / "pipeline"))
+
 from build_multifeature_concordance_rankings import (
     _control_panel_audit,
     build_concordance_ranking,
