@@ -11,7 +11,7 @@
 \renewcommand{\thetable}{S\arabic{table}}
 \title{Supplementary material: Register-aware computation prioritizes EBV--self peptide pairs for experimental testing across HLA class II contexts}
 \author{Anish Sharma}
-\date{September 21, 2026}
+\date{October 17, 2026}
 \begin{document}
 \maketitle
 
@@ -45,7 +45,7 @@ Four-metric rank sensitivity was also performed on the four allele-specific coho
 The constrained null asks whether the observed five-position alignments are unusually favorable after within-core exposed-position permutation in this curated universe. Each core has at most $5!=120$ unique exposed-residue permutations, so the 10,000 replicates repeatedly sample this finite set while preserving the matrix's Cartesian dependence structure. It addresses conditional sequence-score extremeness, not proteome-wide enrichment, matched-decoy performance, natural presentation, or TCR cross-reactivity.
 
 \subsection{SM8. Calibration and exploratory modeling}
-The literature-derived Hy.2E11 cross-reactive benchmark, \pep{BALF5}{627-641}-\pep{MBP}{85-99}, was used as a structural-comparison reference \cite{lang}. It contains HLA-DRA*01:01-HLA-DRB5*01:01 for BALF5 (PDB: 1H15) and HLA-DRA*01:01-HLA-DRB1*15:01 for MBP (PDB: 1BX2). We therefore treated it as a DR15 haplotype-level control. It is not a same-allele calibration and does not validate either BALF5-TALDO1 pair or establish biological mimicry.
+The literature-derived Hy.2E11 cross-reactive benchmark, \pep{BALF5}{627-641}-\pep{MBP}{85-99} (residue numbering as in the DR2--MBP structural literature \cite{gauthier}; UniProt P02686 residues 217--231), was used as a structural-comparison reference \cite{lang}. It contains HLA-DRA*01:01-HLA-DRB5*01:01 for BALF5 (PDB: 1H15) and HLA-DRA*01:01-HLA-DRB1*15:01 for MBP (PDB: 1BX2). We therefore treated it as a DR15 haplotype-level control. It is not a same-allele calibration and does not validate either BALF5-TALDO1 pair or establish biological mimicry.
 
 \subsubsection{PANDORA/MODELLER register stress test}
 PANDORA/MODELLER was configured as a forced-template HLA-DRB1*15:01 register stress test. The primary template was 1BX2 and the sensitivity template was 6CQQ; these templates were preselected rather than discovered by an automated template search. For each template, the prepared file retained the first pMHC copy only, remapped its HLA-alpha, HLA-beta, and peptide chains to M/N/P, and excluded TCR and duplicate pMHC chains. The HLA target sequences were HLA-DRA*01:01 and HLA-DRB1*15:01. Template metadata specified peptide anchors 5, 8, 10, and 13 for 1BX2 and 3, 6, 8, and 11 for 6CQQ. A local PANDORA override retained target termini during alignment. Each template--peptide--register condition requested 20 models using slow loop refinement and at most four local jobs. The runtime was pinned to PANDORA commit \texttt{618bbb573645bd428697666475a2e47a2e418d01}; the local environment record includes a MODELLER/PANDORA import probe and explicit environment lock.
@@ -96,9 +96,9 @@ TCRModel2 & Exploratory TCR-pMHC pose recovery & 1YMM, 1ZGL, and 2WBJ; recovery 
 \begin{tabular}{p{0.11\textwidth}p{0.28\textwidth}p{0.28\textwidth}p{0.25\textwidth}}
 \toprule Allele & Rank 1 & Rank 2 & Rank 3 \\\midrule
 *03:01 & \pep{EBNA2}{136-150}-\pep{MOG}{97-109} (0.48) & \pep{BNRF1}{37-51}-\pep{CLDN11}{193-207} (0.44) & \pep{BALF4}{103-116}-\pep{CRYAB}{1-15} (0.41)\\
-*08:01 & \pep{EBNA1}{87-101}-\pep{ANO2}{79-93} (0.52) & \pep{BLLF1}{65-75}-\pep{PLP1}{140-152} (0.42) & \pep{BZLF1}{198-210}-\pep{MAG}{612-626} (0.391)\\
+*08:01 & \pep{EBNA1}{482-496}-\pep{ANO2}{79-93} (0.52) & \pep{BLLF1}{65-75}-\pep{PLP1}{140-152} (0.42) & \pep{BZLF1}{198-210}-\pep{MAG}{612-626} (0.391)\\
 *13:03 & \pep{EBNA3B}{139-153}-\pep{MOG}{221-235} (0.49) & \pep{BNRF1}{37-51}-\pep{CLDN11}{193-207} (0.44) & \pep{BARF1}{1-15}-\pep{MAG}{1-15} (0.44)\\
-*15:01 & \pep{EBNA1}{87-101}-\pep{ANO2}{79-93} (0.52) & \pep{EBNA3B}{139-153}-\pep{MOG}{221-235} (0.49) & \pep{BALF4}{575-589}-\pep{CNP}{1-15} (0.43)\\\bottomrule
+*15:01 & \pep{EBNA1}{482-496}-\pep{ANO2}{79-93} (0.52) & \pep{EBNA3B}{139-153}-\pep{MOG}{221-235} (0.49) & \pep{BALF4}{575-589}-\pep{CNP}{1-15} (0.43)\\\bottomrule
 \end{tabular}\end{table}
 
 \begin{table}[H]
@@ -135,11 +135,11 @@ BALF5-TALDO1\\HLA-DRB1*15:01 & No / No & Yes / Yes & 1 & 0 & \shortstack{\textbf
 \toprule Target allele & Viral-human pair & Status & Supporting factor & Limitation \\\midrule
 DRB1*15:01 & \pep{BALF5}{627-641}-\pep{TALDO1}{216-230} & Class 1 & Three selected outputs met 20\% routing rule; viral IEDB binding & Permissive threshold; input-sensitive predicted placement; no self-arm elution record\\
 DRB1*13:03 & \pep{BALF5}{627-641}-\pep{TALDO1}{108-122} & Class 2 & Three selected outputs met 20\% routing rule & Permissive threshold; unresolved geometry; no verified public record\\
-DRB1*15:01 & \pep{EBNA1}{87-101}-\pep{MBP}{217-233} & Class 2 & Declared register retained across calibrated PANDORA templates & Binding-predictor discrepancy; lower rank\\
+DRB1*15:01 & \pep{EBNA1}{482-496}-\pep{MBP}{217-233} & Class 2 & Declared register retained across calibrated PANDORA templates & Binding-predictor discrepancy; lower rank\\
 DRB1*15:01 & \pep{BALF4}{103-116}-\pep{CRYAB}{1-15} & Class 3 & Initial sequence similarity & Template-sensitive predicted placement\\
 DRB1*03:01 & \pep{EBNA2}{136-150}-\pep{MOG}{97-109} & Class 3 & Initial sequence rank & No same-allele PANDORA calibration\\
 DRB1*08:01 & \pep{BHRF1}{122-133}-\pep{ANO2}{104-118} & Class 3 & Initial sequence rank & No same-allele PANDORA calibration\\
-DRB1*08:01 & \pep{EBNA1}{87-101}-\pep{ANO2}{79-93} & Class 3 & Initial sequence rank & No same-allele PANDORA calibration\\
+DRB1*08:01 & \pep{EBNA1}{482-496}-\pep{ANO2}{79-93} & Class 3 & Initial sequence rank & No same-allele PANDORA calibration\\
 Various & Various & Untiered & Heterogeneous profiles & Incomplete consensus or evidence\\\bottomrule
 \end{tabular}\end{table}
 

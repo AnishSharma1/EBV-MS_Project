@@ -1,6 +1,9 @@
 # EBV-MS Complete Codebase & Analysis Pipelines
 
-This directory houses the comprehensive collection of **210+ analysis scripts, figure generators, test suites, and batch utilities** powering the EBV–MS project.
+This directory holds the analysis scripts, figure generators, test modules, and batch utilities for the EBV–MS project: 194 active files (102 Python + 6 R in `pipeline/`, 21 in `revision_analyses/`, 6 in `batch_builders/`, 3 Python + 4 R in `figures/`, 51 tests, 1 in `staging/`) plus preserved exploratory material in `archive/`.
+
+> [!IMPORTANT]
+> Several scripts reference absolute paths on the original author workstation or inputs that live in the separate `ebv_ms_publication/` workspace, and some analyses named below have no outputs in this checkout. Inspect a script's inputs and output paths before running it. The package verifies frozen results; it does not guarantee that every script regenerates them from this checkout.
 
 ---
 
@@ -8,12 +11,13 @@ This directory houses the comprehensive collection of **210+ analysis scripts, f
 
 ```
 code/
-├── pipeline/             # 107 Primary analysis and data processing scripts (101 Python, 6 R)
+├── pipeline/             # 108 analysis and data-processing scripts (102 Python, 6 R)
 │   ├── prepare_datasets.py               # Rebuilds normalized tables from raw/ inputs
 │   ├── rank_full_pmhc_screen.py          # Executes 6,400-pair within-allele discovery screen
 │   ├── biochemical_similarity.py         # Multi-metric sequence scoring and sensitivity
 │   ├── add_mixmhc2pred_validation.py     # Multi-predictor consensus (MixMHC2pred integration)
 │   ├── run_null_model.py                 # 10,000-replicate constrained-null simulations
+│   ├── fetch_reference_sequences.py      # Fetches UniProt records for the 80-peptide panel; checks declared coordinates
 │   ├── run_focused_taldo1_register_analysis.py # TALDO1 register stability assessment
 │   ├── same_register_af3_analysis.py     # AlphaFold 3 parent-vs-nested structural evaluation
 │   ├── lead_focused_robustness.py        # Lead-candidate robustness dashboard generation
@@ -21,7 +25,7 @@ code/
 │   └── ...                               # Domain-specific modules and scoring scripts
 │
 ├── figures/              # Manuscript & Supplement figure rendering scripts (Python & R)
-│   ├── build_structural_and_binding.R    # Figure 2 / Figure 3 structural & binding panels
+│   ├── build_structural_and_binding.R    # Structural and binding panels (output filename mapping not recorded)
 │   ├── build_workflow_and_rank_sensitivity.R # Workflow & ranking sensitivity ggplot figures
 │   ├── build_workflow_and_rank_sensitivity.py # Python counterpart for workflow & sensitivity
 │   ├── restyle_figures_ggplot.R          # High-resolution styling conforming to BMC guidelines
@@ -29,8 +33,8 @@ code/
 │   ├── build_panels.py                   # Multi-panel composite figure assembler
 │   └── restyle_panels.py                 # Matplotlib/Seaborn panel aesthetic restyler
 │
-├── revision_analyses/    # 16 Computational tightening & reviewer-requested robustness analyses
-│   ├── run_proteome_sequence_null.py     # Human proteome sequence null (11.25M 9-mers)
+├── revision_analyses/    # 21 revision-round and robustness scripts (outputs for the round-3 packages are NOT in this checkout)
+│   ├── run_proteome_sequence_null.py     # Human proteome sequence null (11.25M 9-mers); not reported in the V19 or V20 manuscript
 │   ├── run_proteome_binding_filter.py    # Two-predictor top-1,000 binding prefilter
 │   ├── run_iedb_proteome_binding_filter.py# IEDB binding consensus filter
 │   ├── run_structural_ensemble_reanalysis.py # Corrected AF3 C-alpha RMSD & medoid calculations
@@ -42,6 +46,7 @@ code/
 │   ├── audit_control_manifest.py         # RCSB GraphQL audit of post-cutoff TCR-pMHC controls
 │   ├── decide_predictor_gate.py          # Predeclared 9-of-12 structural recovery gate (DockQ >= 0.23)
 │   ├── check_manifest_integrity.py       # SHA-256 integrity verification for control panels
+│   ├── build_release_index.py            # Round-3 release index; refuses to run unless all 7 component packages and artifacts exist
 │   ├── audit_tcrmodel2_components.py     # Sequence-aligned TCRModel2 diagnostic audit
 │   └── run_computational_tightening.py   # Integrated computational tightening runner
 │
@@ -53,9 +58,10 @@ code/
 │   ├── build_stuve_project_flow.py       # Project flow architecture generator
 │   └── build_olivia_master_brief.py      # Master briefing synthesis utility
 │
-├── tests/                # 49 Automated validation & regression test suites
-│   ├── test_repository_integrity.py      # Assertions on project structure and file sizes
-│   ├── test_verify_package.py            # Checksum and package manifest assertions
+├── tests/                # 51 test modules (stdlib `unittest` or plain-assert scripts; no pinned dependency manifest)
+│   ├── test_repository_integrity.py      # Structure, cite-key/bibliography, included-graphics, README-consistency checks; runs verify_package.py
+│   ├── test_peptide_coordinate_integrity.py # Checks the 80 panel peptides against stored UniProt sequences
+│   ├── test_build_release_index.py       # Release index cannot report PASS without real packages and artifacts
 │   ├── test_build_missing_v2_af3_batches.py # Batch generator regression testing
 │   ├── test_multiallele_validator.py     # JSON validation test for multi-allele sets
 │   └── test_*.py                         # Comprehensive numerical & biological regression suites
@@ -100,11 +106,7 @@ python3 code/pipeline/rank_full_pmhc_screen.py
 ```
 
 ### Figure Generation:
-To generate all publication figures (Figures 1–4 and Supplementary Figures):
-```bash
-Rscript code/figures/reproduce_figures.R
-python3 code/figures/build_panels.py
-```
+The figure scripts are not runnable end to end from this checkout: several use absolute workstation paths, and `reproduce_figures.R` expects `outputs/manuscript_figures_only_2026-09-06/source_data`, which is absent. The published PDFs are in `figures/` and `manuscript/figures/`; see `figures/README.md`.
 
 ### Reviewer Robustness & Computational Tightening:
 ```bash
@@ -117,10 +119,13 @@ python3 code/revision_analyses/decide_predictor_gate.py <results_table.csv>
 ```
 
 ### Running Validation Tests:
-To run the complete repository integrity and regression test suite:
+Repository integrity (stdlib only):
 ```bash
 python3 code/tests/test_repository_integrity.py
+python3 code/tests/test_peptide_coordinate_integrity.py
+python3 code/tests/test_build_release_index.py
 ```
+Most other test modules were not re-run when this README was updated; check a module's imports and any output paths before running it.
 
 ### Package Checksum Verification:
 ```bash

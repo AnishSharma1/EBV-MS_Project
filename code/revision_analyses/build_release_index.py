@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
-"""Build and verify the round-3 computational-additions release index."""
+"""Build and verify the round-3 computational-additions release index.
+
+The seven component packages named in ``PACKAGES`` are NOT part of every checkout
+(they are absent from the canonical EBV-MS_Project tree, and the V19 manuscript
+does not cite them). The script therefore refuses to write any index unless every
+package and every ``primary_artifact`` listed in the status table exists and
+verifies. A ``complete`` status row is a claim about a file; it is only written
+when that file is present.
+"""
 
 from __future__ import annotations
 
@@ -20,6 +28,26 @@ PACKAGES = [
     "register_uncertainty_2026-09-15",
     "solved_structure_benchmark_inventory_2026-09-15",
     "evidence_and_control_audit_2026-09-15",
+]
+
+
+STATUS_ROWS = [
+    ("Exact scoring equation, positions, normalization, negative-score handling, worked examples", "complete", "computational_tightening_2026-09-15/scoring_formula.json"),
+    ("Complete 6,400-pair score/ablation table", "complete", "computational_tightening_2026-09-15/score_ablation_all_6400.csv"),
+    ("Threshold-sensitivity analysis", "complete", "computational_tightening_2026-09-15/figure_threshold_sensitivity.svg"),
+    ("Matched empirical decoys", "complete_post_hoc_descriptive", "computational_tightening_2026-09-15/matched_empirical_decoys.csv"),
+    ("Independent +/-1 viral/self register scenarios", "complete_sensitivity_not_posterior", "register_uncertainty_2026-09-15/lead_register_uncertainty_summary.csv"),
+    ("Corrected structural ensemble statistics and full dependent 5x5 matrices", "complete", "computational_tightening_2026-09-15/structural_ensemble_corrected_with_medoids.csv"),
+    ("Model-level AF3 confidence table", "complete", "computational_tightening_2026-09-15/af3_model_level_confidence_65.csv"),
+    ("General solved HLA-II structure discovery inventory", "inventory_complete_validation_pending_manual_register_ground_truth", "solved_structure_benchmark_inventory_2026-09-15/benchmark_status.json"),
+    ("Reviewed-human-proteome sequence null, 11.25 million 9-mers", "complete", "proteome_sequence_null_2026-09-15/proteome_sequence_null_summary.csv"),
+    ("Top-1,000-per-lead two-predictor HLA-II binding filter", "complete_sensitivity_not_full_proteome_binding_scan", "proteome_binding_consensus_2026-09-15/two_predictor_consensus_summary.csv"),
+    ("HLA Ligand Atlas and submitted PXD068488 table audit", "complete_processed_source_audit", "evidence_and_control_audit_2026-09-15/lead_immunopeptidomics_summary.csv"),
+    ("PXD068488 raw-spectrum reanalysis", "prepared_not_run", "evidence_and_control_audit_2026-09-15/raw_immunopeptidomics_reanalysis_lock.json"),
+    ("TCR-facing score control validation", "audited_provisional_three_systems_definitive_gate_blocked", "evidence_and_control_audit_2026-09-15/tcr_score_validation_status.json"),
+    ("Prospective experiment lock", "complete_preexperiment_prepared_not_submitted", "computational_tightening_2026-09-15/prospective_preexperiment_lock.json"),
+    ("Direct residue-to-pocket ground-truth caller across solved structures", "pending_manual_ground_truth_and_blind_benchmark", "solved_structure_benchmark_inventory_2026-09-15/benchmark_status.json"),
+    ("Experimental binding, register mapping, and cross-reactivity validation", "pending_experiment", "computational_tightening_2026-09-15/prospective_preexperiment_lock.json"),
 ]
 
 
@@ -51,7 +79,20 @@ def verify_manifest(package):
     return len(rows), failures
 
 
+def missing_packages(round_dir=None):
+    """Names of component packages whose SHA256SUMS.csv is not on disk."""
+    round_dir = ROUND if round_dir is None else round_dir
+    return [name for name in PACKAGES if not (round_dir / name / "SHA256SUMS.csv").is_file()]
+
+
 def main():
+    absent = missing_packages()
+    if absent:
+        print(
+            f"Cannot build the release index: {len(absent)} of {len(PACKAGES)} component "
+            f"packages are not present under {ROUND}:\n  " + "\n  ".join(absent)
+        )
+        raise SystemExit(2)
     OUT.mkdir(parents=True, exist_ok=True)
     package_rows = []
     all_failures = []
@@ -68,25 +109,17 @@ def main():
         })
     write_csv(OUT / "package_index.csv", package_rows)
 
-    status_rows = [
-        ("Exact scoring equation, positions, normalization, negative-score handling, worked examples", "complete", "computational_tightening_2026-09-15/scoring_formula.json"),
-        ("Complete 6,400-pair score/ablation table", "complete", "computational_tightening_2026-09-15/score_ablation_all_6400.csv"),
-        ("Threshold-sensitivity analysis", "complete", "computational_tightening_2026-09-15/figure_threshold_sensitivity.svg"),
-        ("Matched empirical decoys", "complete_post_hoc_descriptive", "computational_tightening_2026-09-15/matched_empirical_decoys.csv"),
-        ("Independent +/-1 viral/self register scenarios", "complete_sensitivity_not_posterior", "register_uncertainty_2026-09-15/lead_register_uncertainty_summary.csv"),
-        ("Corrected structural ensemble statistics and full dependent 5x5 matrices", "complete", "computational_tightening_2026-09-15/structural_ensemble_corrected_with_medoids.csv"),
-        ("Model-level AF3 confidence table", "complete", "computational_tightening_2026-09-15/af3_model_level_confidence_65.csv"),
-        ("General solved HLA-II structure discovery inventory", "inventory_complete_validation_pending_manual_register_ground_truth", "solved_structure_benchmark_inventory_2026-09-15/benchmark_status.json"),
-        ("Reviewed-human-proteome sequence null, 11.25 million 9-mers", "complete", "proteome_sequence_null_2026-09-15/proteome_sequence_null_summary.csv"),
-        ("Top-1,000-per-lead two-predictor HLA-II binding filter", "complete_sensitivity_not_full_proteome_binding_scan", "proteome_binding_consensus_2026-09-15/two_predictor_consensus_summary.csv"),
-        ("HLA Ligand Atlas and submitted PXD068488 table audit", "complete_processed_source_audit", "evidence_and_control_audit_2026-09-15/lead_immunopeptidomics_summary.csv"),
-        ("PXD068488 raw-spectrum reanalysis", "prepared_not_run", "evidence_and_control_audit_2026-09-15/raw_immunopeptidomics_reanalysis_lock.json"),
-        ("TCR-facing score control validation", "audited_provisional_three_systems_definitive_gate_blocked", "evidence_and_control_audit_2026-09-15/tcr_score_validation_status.json"),
-        ("Prospective experiment lock", "complete_preexperiment_prepared_not_submitted", "computational_tightening_2026-09-15/prospective_preexperiment_lock.json"),
-        ("Direct residue-to-pocket ground-truth caller across solved structures", "pending_manual_ground_truth_and_blind_benchmark", "solved_structure_benchmark_inventory_2026-09-15/benchmark_status.json"),
-        ("Experimental binding, register mapping, and cross-reactivity validation", "pending_experiment", "computational_tightening_2026-09-15/prospective_preexperiment_lock.json"),
-    ]
-    status = [{"requested_addition": a, "status": b, "primary_artifact": c} for a, b, c in status_rows]
+    status = []
+    for addition, state, artifact in STATUS_ROWS:
+        present = (ROUND / artifact).is_file()
+        if not present:
+            all_failures.append(f"missing_artifact:{artifact}")
+        status.append({
+            "requested_addition": addition,
+            "status": state,
+            "primary_artifact": artifact,
+            "primary_artifact_present": present,
+        })
     write_csv(OUT / "requested_additions_status.csv", status)
 
     qa = {

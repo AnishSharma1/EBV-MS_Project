@@ -6,6 +6,11 @@ This is a compact public release assembled on 2026-09-11 from the project’s ve
 
 - `scripts/` — source programs used to build libraries, construct pMHC inputs, evaluate controls, and analyze structural outputs.
 - `data/` — frozen, compact input and evidence tables.
+- `data/reference_sequences_2026-10-16/` — canonical UniProt records for every panel
+  accession, added 2026-10-16 so declared peptide coordinates can be verified
+  offline. 72/80 panel peptides match exactly; the eight exceptions (MBP/MOG
+  numbering conventions, EBNA2/LMP2 strain variation) are itemised in that
+  directory's README. Both routed BALF5–TALDO1 leads match exactly.
 - `results/` — selected current result summaries, gate records, and TCRmodel2 calibration reports.
 - `docs/` — scope, claims, provenance, and deliberate omissions.
 - `MANIFEST.sha256` — SHA-256 hashes for all release files except itself.
